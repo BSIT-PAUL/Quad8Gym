@@ -179,7 +179,7 @@ header('location:../index.php');
               <label class="control-label">Total Amount</label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
+                  <span class="add-on">₱</span> 
                   <input type="number" placeholder="500" name="amount" class="span11">
                   </div>
               </div>

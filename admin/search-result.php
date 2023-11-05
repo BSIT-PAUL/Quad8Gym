@@ -101,7 +101,7 @@ header('location:../index.php');
                 <td><div class='text-center'>".$cnt."</div></td>
                 <td><div class='text-center'>".$row['fullname']."</div></td>
                 <td><div class='text-center'>".$row['paid_date']."</div></td>
-                <td><div class='text-center'>$".$row['amount']."</div></td>
+                <td><div class='text-center'>₱".$row['amount']."</div></td>
                 <td><div class='text-center'>".$row['services']."</div></td>
                 <td><div class='text-center'>".$row['plan']." Days</div></td>
                 <td><div class='text-center'><a href='user-payment.php?id=".$row['user_id']."'><button class='btn btn-success btn'><i class='fas fa-dollar-sign'></i> Make Payment</button></a></div></td>

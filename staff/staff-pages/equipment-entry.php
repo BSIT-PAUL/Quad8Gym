@@ -154,7 +154,7 @@ header('location:../index.php');
               <label class="control-label">Total Cost: </label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
+                  <span class="add-on">₱</span> 
                   <input type="number" placeholder="120000" name="amount" class="span11" required>
                   </div>
               </div>

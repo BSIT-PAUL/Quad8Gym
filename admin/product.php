@@ -49,7 +49,7 @@ header('location:../index.php');
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="current">Product List</a> </div>
-    <h1 class="text-center">Quad 8 Gym's Equipment List <i class="fas fa-cogs"></i></h1>
+    <h1 class="text-center">Quad 8 Gym's Product List <i class="fas fa-cogs"></i></h1>
   </div>
   <div class="container-fluid">
     <hr>
@@ -93,7 +93,7 @@ header('location:../index.php');
                 <td><div class='text-center'>".$row['name']."</div></td>
                 <td><div class='text-center'>".$row['description']."</div></td>
                 <td><div class='text-center'>".$row['quantity']."</div></td>
-                <td><div class='text-center'>$".$row['amount']."</div></td>
+                <td><div class='text-center'>₱".$row['amount']."</div></td>
                 <td><div class='text-center'>".$row['vendor']."</div></td>
                 <td><div class='text-center'>".$row['address']."</div></td>
                 <td><div class='text-center'>".$row['contact']."</div></td>

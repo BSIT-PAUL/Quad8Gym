@@ -48,8 +48,8 @@ header('location:../index.php');
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="tip-bottom">Equipments</a> <a href="#" class="current">Add Equipments</a> </div>
-  <h1>Equipment Entry Form</h1>
+  <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="tip-bottom">Product</a> <a href="#" class="current">Add Product</a> </div>
+  <h1>Product Entry Form</h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -57,14 +57,14 @@ header('location:../index.php');
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
-          <h5>Eqipment-info</h5>
+          <h5>Product-info</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="add-equipment-req.php" method="POST" class="form-horizontal">
             <div class="control-group">
-              <label class="control-label">Equipment :</label>
+              <label class="control-label">Product :</label>
               <div class="controls">
-                <input type="text" class="span11" name="ename" placeholder="Equipment Name" required />
+                <input type="text" class="span11" name="pname" placeholder="Product Name" required />
               </div>
             </div>
             <div class="control-group">
@@ -76,16 +76,16 @@ header('location:../index.php');
            
             
             <div class="control-group">
-              <label class="control-label">Date of Purchase :</label>
+              <label class="control-label">Date of Expiration :</label>
               <div class="controls">
                 <input type="date" name="date" class="span11" />
-                <span class="help-block">Please mention the date of purchase</span> </div>
+                <span class="help-block">Please mention the date of expiration</span> </div>
             </div>
 
             <div class="control-group">
               <label class="control-label">Quantity :</label>
               <div class="controls">
-                <input type="number" class="span5" name="quantity" placeholder="Equipment Qty" required />
+                <input type="number" class="span5" name="quantity" placeholder="Product Qty" required />
               </div>
             </div>
             
@@ -160,7 +160,7 @@ header('location:../index.php');
               <label class="control-label">Cost Per Item: </label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
+                  <span class="add-on">₱</span> 
                   <input type="number" placeholder="269" name="amount" class="span11" required>
                   </div>
               </div>
