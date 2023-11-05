@@ -55,7 +55,7 @@ include('dbcon.php'); ?>
                         if ($num_row > 0) 
                             {			
                                 $_SESSION['user_id']=$row['user_id'];
-                                header('location:staff-pages/action/index.php');
+                                 header('location:staff-pages/action/index.php');
                                 
                             }
                         else
