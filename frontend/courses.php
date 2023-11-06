@@ -45,25 +45,25 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="img/TT.png" alt=""></a>
+                            <a href="index.php"><img src="img/TT.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="courses.html">Courses</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="blog.html">Blog</a>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="courses.php">Courses</a></li>
+                                    <li><a href="pricing.php">Pricing</a></li>
+                                    <li><a href="gallery.php">Gallery</a></li>
+                                    <li><a href="blog.php">Blog</a>
                                         <ul class="submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog_details.html">Blog Details</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
+                                            <li><a href="blog.php">Blog</a></li>
+                                            <li><a href="blog_details.php">Blog Details</a></li>
+                                            <li><a href="elements.php">Elements</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>          
@@ -114,7 +114,7 @@
                             <img src="assets/img/gallery/team1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Body Building</a></h5>
+                            <h5><a href="services.php">Body Building</a></h5>
                             <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             <img src="assets/img/gallery/team2.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Muscle Gain</a></h5>
+                            <h5><a href="services.php">Muscle Gain</a></h5>
                             <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                             <img src="assets/img/gallery/team3.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Weight Loss</a></h5>
+                            <h5><a href="services.php">Weight Loss</a></h5>
                             <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                 <div class="topic-content">
                                     <h3>Personal traning</h3>
                                     <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
-                                    <a href="courses.html" class="border-btn">View Courses</a>
+                                    <a href="courses.php" class="border-btn">View Courses</a>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                                 <div class="topic-content">
                                     <h3>Group traning</h3>
                                     <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
-                                    <a href="courses.html" class="btn">View Courses</a>
+                                    <a href="courses.php" class="btn">View Courses</a>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +246,7 @@
                         <div class="single-footer-caption mb-50 text-center">
                             <!-- logo -->
                             <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <a href="index.html"><img src="img/TT.png" alt=""></a>
+                                <a href="index.php"><img src="img/TT.png" alt=""></a>
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
@@ -257,12 +257,12 @@
                                         <div class="main-menu main-menu2 text-center">
                                             <nav>
                                                 <ul>
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="courses.html">Courses</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="index.php">Home</a></li>
+                                                    <li><a href="about.php">About</a></li>
+                                                    <li><a href="courses.php">Courses</a></li>
+                                                    <li><a href="pricing.php">Pricing</a></li>
+                                                    <li><a href="gallery.php">Gallery</a></li>
+                                                    <li><a href="contact.php">Contact</a></li>
                                                 </ul>
                                             </nav>
                                         </div>   

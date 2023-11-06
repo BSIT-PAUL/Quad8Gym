@@ -42,25 +42,25 @@
               <div class="menu-wrapper d-flex align-items-center justify-content-between">
                   <!-- Logo -->
                   <div class="logo">
-                      <a href="index.html"><img src="img/TT.png" alt=""></a>
+                      <a href="index.php"><img src="img/TT.png" alt=""></a>
                   </div>
                   <!-- Main-menu -->
                   <div class="main-menu f-right d-none d-lg-block">
                       <nav>
                           <ul id="navigation">
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="courses.html">Courses</a></li>
-                              <li><a href="pricing.html">Pricing</a></li>
-                              <li><a href="gallery.html">Gallery</a></li>
-                              <li><a href="blog.html">Blog</a>
+                              <li><a href="index.php">Home</a></li>
+                              <li><a href="about.php">About</a></li>
+                              <li><a href="courses.php">Courses</a></li>
+                              <li><a href="pricing.php">Pricing</a></li>
+                              <li><a href="gallery.php">Gallery</a></li>
+                              <li><a href="blog.php">Blog</a>
                                   <ul class="submenu">
-                                      <li><a href="blog.html">Blog</a></li>
-                                      <li><a href="blog_details.html">Blog Details</a></li>
-                                      <li><a href="elements.html">Elements</a></li>
+                                      <li><a href="blog.php">Blog</a></li>
+                                      <li><a href="blog_details.php">Blog Details</a></li>
+                                      <li><a href="elements.php">Elements</a></li>
                                   </ul>
                               </li>
-                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="contact.php">Contact</a></li>
                           </ul>
                       </nav>
                   </div>          
@@ -388,7 +388,7 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
   <div class="media post_item">
    <img src="assets/img/post/post_1.png" alt="post">
    <div class="media-body">
-    <a href="blog_details.html">
+    <a href="blog_details.php">
      <h3 style="color: #2d2d2d;">From life was you fish...</h3>
    </a>
    <p>January 12, 2019</p>
@@ -397,7 +397,7 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
 <div class="media post_item">
  <img src="assets/img/post/post_2.png" alt="post">
  <div class="media-body">
-  <a href="blog_details.html">
+  <a href="blog_details.php">
    <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
  </a>
  <p>02 Hours ago</p>
@@ -406,7 +406,7 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
 <div class="media post_item">
  <img src="assets/img/post/post_3.png" alt="post">
  <div class="media-body">
-  <a href="blog_details.html">
+  <a href="blog_details.php">
    <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
  </a>
  <p>03 Hours ago</p>
@@ -415,7 +415,7 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
 <div class="media post_item">
  <img src="assets/img/post/post_4.png" alt="post">
  <div class="media-body">
-  <a href="blog_details.html">
+  <a href="blog_details.php">
    <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
  </a>
  <p>01 Hours ago</p>
@@ -557,7 +557,7 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
             <div class="single-footer-caption mb-50 text-center">
               <!-- logo -->
               <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                <a href="index.html"><img src="img/TT.png" alt=""></a>
+                <a href="index.php"><img src="img/TT.png" alt=""></a>
               </div>
               <!-- Menu -->
               <!-- Header Start -->
@@ -568,12 +568,12 @@ class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end al
                     <div class="main-menu main-menu2 text-center">
                       <nav>
                         <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="courses.html">Courses</a></li>
-                          <li><a href="pricing.html">Pricing</a></li>
-                          <li><a href="gallery.html">Gallery</a></li>
-                          <li><a href="contact.html">Contact</a></li>
+                          <li><a href="index.php">Home</a></li>
+                          <li><a href="about.php">About</a></li>
+                          <li><a href="courses.php">Courses</a></li>
+                          <li><a href="pricing.php">Pricing</a></li>
+                          <li><a href="gallery.php">Gallery</a></li>
+                          <li><a href="contact.php">Contact</a></li>
                         </ul>
                       </nav>
                     </div>   

@@ -47,25 +47,25 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="img/TT.png" alt=""></a>
+                            <a href="index.php"><img src="img/TT.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="courses.html">Courses</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="blog.html">Blog</a>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="courses.php">Courses</a></li>
+                                    <li><a href="pricing.php">Pricing</a></li>
+                                    <li><a href="gallery.php">Gallery</a></li>
+                                    <li><a href="blog.php">Blog</a>
                                         <ul class="submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog_details.html">Blog Details</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
+                                            <li><a href="blog.php">Blog</a></li>
+                                            <li><a href="blog_details.php">Blog Details</a></li>
+                                            <li><a href="elements.php">Elements</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -268,7 +268,7 @@
                             <div class="single-footer-caption mb-50 text-center">
                                 <!-- logo -->
                                 <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                    <a href="index.html"><img src="img/TT.png" alt=""></a>
+                                    <a href="index.php"><img src="img/TT.png" alt=""></a>
                                 </div>
                                 <!-- Menu -->
                                 <!-- Header Start -->
@@ -280,12 +280,12 @@
                                             <div class="main-menu main-menu2 text-center">
                                                 <nav>
                                                     <ul>
-                                                        <li><a href="index.html">Home</a></li>
-                                                        <li><a href="about.html">About</a></li>
-                                                        <li><a href="courses.html">Courses</a></li>
-                                                        <li><a href="pricing.html">Pricing</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="contact.html">Contact</a></li>
+                                                        <li><a href="index.php">Home</a></li>
+                                                        <li><a href="about.php">About</a></li>
+                                                        <li><a href="courses.php">Courses</a></li>
+                                                        <li><a href="pricing.php">Pricing</a></li>
+                                                        <li><a href="gallery.php">Gallery</a></li>
+                                                        <li><a href="contact.php">Contact</a></li>
                                                     </ul>
                                                 </nav>
                                             </div>
