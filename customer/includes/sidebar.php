@@ -2,6 +2,7 @@
   <ul>
     <li class="<?php if($page=='dashboard'){ echo 'active'; }?>"><a href="index.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
     <li class="<?php if($page=='todo'){ echo 'active'; }?>"> <a href="to-do.php"><i class="icon icon-pencil"></i> <span>To-Do</span></a>
+    <li class="<?php if($page=='products'){ echo 'active'; }?>"> <a href="products.php"><i class="icon icon-file"></i> <span>Buy Products</span></a>
 
     </li>
 
