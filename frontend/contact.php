@@ -65,7 +65,7 @@
                     </div>          
                     <!-- Header-btn -->
                     <div class="header-btns d-none d-lg-block f-right">
-                       <a href="admin-login.php" class="btn">Admin</a>
+                       <a href="../login.php" class="btn">Sign In</a>
                    </div>
                    <!-- Mobile Menu -->
                    <div class="col-12">

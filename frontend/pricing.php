@@ -71,7 +71,7 @@
                         </div>
                         <!-- Header-btn -->
                         <div class="header-btns d-none d-lg-block f-right">
-                            <a href="SIGN IN-login.php" class="btn">SIGN IN</a>
+                            <a href="../login.php" class="btn">SIGN IN</a>
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
