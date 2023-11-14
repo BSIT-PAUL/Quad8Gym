@@ -69,7 +69,7 @@
                         </div>          
                         <!-- Header-btn -->
                         <div class="header-btns d-none d-lg-block f-right">
-                           <a href="admin-login.php" class="btn">Sign in</a>
+                           <a href="login.php" class="btn">Sign in</a>
                        </div>
                        <!-- Mobile Menu -->
                        <div class="col-12">

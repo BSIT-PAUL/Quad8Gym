@@ -1,5 +1,5 @@
 <?php
 session_start();
 session_destroy();
-header('location:staff-login.html');
+header('location:../index.php');
 ?>

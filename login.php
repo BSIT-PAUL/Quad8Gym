@@ -40,34 +40,52 @@ include('dbcon.php'); ?>
             </div>
             <input type="submit" value="Login" class="nextPage" name="login">
             <?php
-                if (isset($_POST['login']))
-                    {
-                        $username = mysqli_real_escape_string($con, $_POST['username']);
-                        $password = mysqli_real_escape_string($con, $_POST['pass']);
+if (isset($_POST['login'])) {
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['pass']);
+    $password = md5($password);
 
-                        $password = md5($password);
-                        
-                        $query 		= mysqli_query($con, "SELECT * FROM members WHERE  password='$password' and username='$username' and status='Active'");
-                        $row		= mysqli_fetch_array($query);
-                        $num_row 	= mysqli_num_rows($query);
-                        
-                        if ($num_row > 0) 
-                            {			
-                                $_SESSION['user_id']=$row['user_id'];
-                                header('location:pages/index.php');
-                                
-                            }
-                        else
-                            {
-                                echo "<div class='alert alert-danger alert-dismissible' role='alert'>
-                                Invalid Username/Password or Account has been Expired!
-                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                                    <span aria-hidden='true'>&times;</span>
-                                </button>
-                                </div>";
-                            }
-                    }
-            ?>
+    // Check if the user is an admin
+    $admin_query = mysqli_query($con, "SELECT * FROM admin WHERE password='$password' and username='$username'");
+    $admin_row = mysqli_fetch_array($admin_query);
+    $admin_num_row = mysqli_num_rows($admin_query);
+
+    // Check if the user is a staff
+    $staff_query = mysqli_query($con, "SELECT * FROM staffs WHERE password='$password' and username='$username'");
+    $staff_row = mysqli_fetch_array($staff_query);
+    $staff_num_row = mysqli_num_rows($staff_query);
+
+    if ($admin_num_row > 0) {
+        // Admin login
+        $_SESSION['user_id'] = $admin_row['user_id'];
+        header('location: admin/index.php'); // Adjust the path as needed
+    } elseif ($staff_num_row > 0) {
+        // Staff login
+        $_SESSION['user_id'] = $staff_row['user_id'];
+        header('location: staff/staff-pages/index.php'); // Adjust the path as needed
+    } else {
+        // Customer login (assuming it's in the 'members' table)
+        $query = mysqli_query($con, "SELECT * FROM members WHERE password='$password' and username='$username' and status='Active'");
+        $row = mysqli_fetch_array($query);
+        $num_row = mysqli_num_rows($query);
+
+        if ($num_row > 0) {
+            // Customer login
+            $_SESSION['user_id'] = $row['user_id'];
+            header('location: customer/pages/index.php'); // Adjust the path as needed
+        } else {
+            // Invalid login
+            echo "<div class='alert alert-danger alert-dismissible' role='alert'>
+                    Invalid Username/Password or Account has been Expired!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                    </button>
+                  </div>";
+        }
+    }
+}
+?>
+
             </form>
             <script src="js/jquery.min.js"></script>  
         <script src="js/matrix.login.js"></script> 
