@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@ header('location:../index.php');
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!--Header-part-->
 <div id="header">
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
@@ -65,7 +65,7 @@ header('location:../index.php');
 	  <?php
 
       include "dbcon.php";
-      $qry="select * from equipment";
+      $qry="select * from products";
       $cnt = 1;
         $result=mysqli_query($conn,$qry);
 
@@ -73,35 +73,28 @@ header('location:../index.php');
           echo"<table class='table table-bordered table-hover'>
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>E. Name</th>
-                  <th>Description</th>
-                  <th>Qty</th>
-                  <th>Amount</th>
-                  <th>Vendor</th>
-                  <th>Address</th>
-                  <th>Contact</th>
-                  <th>Purchased Date</th>
+                <th>#</th>
+                  <th>Product Name</th>
+                  <th>Flavor</th>
+                  <th>Brand</th>
+                  <th>Price</th>
+                  <th>Quantity Available</th>
                 </tr>
               </thead>";
               
             while($row=mysqli_fetch_array($result)){
             
             echo"<tbody> 
-               
-                <td><div class='text-center'>".$cnt."</div></td>
-                <td><div class='text-center'>".$row['name']."</div></td>
-                <td><div class='text-center'>".$row['description']."</div></td>
-                <td><div class='text-center'>".$row['quantity']."</div></td>
-                <td><div class='text-center'>₱".$row['amount']."</div></td>
-                <td><div class='text-center'>".$row['vendor']."</div></td>
-                <td><div class='text-center'>".$row['address']."</div></td>
-                <td><div class='text-center'>".$row['contact']."</div></td>
-                <td><div class='text-center'>".$row['date']."</div></td>
+            <td><div class='text-center'>".$cnt."</div></td>
+                <td><div class='text-center'>".$row['item_name']."</div></td>
+                <td><div class='text-center'>".$row['flavor']."</div></td>
+                <td><div class='text-center'>".$row['brand']."</div></td>
+                <td><div class='text-center'>₱".$row['price']."</div></td>
+                <td><div class='text-center'>".$row['quantity_available']."</div></td>
              
                 
               </tbody>";
-          $cnt++;  }
+              $cnt++;}
             ?>
 
             </table>
@@ -117,19 +110,7 @@ header('location:../index.php');
 
 <!--end-main-container-part-->
 
-<!--Footer-part-->
-
-<div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
-</div>
-
-<style>
-#footer {
-  color: white;
-}
-</style>
-
-<!--end-Footer-part-->
+  
 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 

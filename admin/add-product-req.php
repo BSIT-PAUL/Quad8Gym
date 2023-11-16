@@ -1,6 +1,5 @@
 <?php
 session_start();
-//the isset function to check username is already loged in and stored on the session
 if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
@@ -29,8 +28,8 @@ header('location:../index.php');
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
   <h1><a href="dashboard.html">Quad 8 Gym</a></h1>
 </div>
-<!--close-Header-part-->  
-
+<!--close-Header-part--> 
+ 
 
 <!--top-Header-menu-->
 <?php include 'includes/topheader.php'?>
@@ -38,84 +37,98 @@ header('location:../index.php');
 <!--start-top-serch-->
 <!-- <div id="search">
   <input type="hidden" placeholder="Search here..."/>
-  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+  <button type="submit" class="tip-bottom" title="Search"><i class="fa-search fa-white"></i></button>
 </div> -->
 <!--close-top-serch-->
 
 <!--sidebar-menu-->
-  
-<?php $page='remove-product'; include 'includes/sidebar.php'?>
+<?php $page='add-product'; include 'includes/sidebar.php'?>
+
+
 <!--sidebar-menu-->
-
 <div id="content">
-  <div id="content-header">
-    <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="remove-product.php" class="current">Remove Product</a> </div>
-    <h1 class="text-center">Remove Gym's Product <i class="fas fa-cogs"></i></h1>
-  </div>
-  <div class="container-fluid">
-    <hr>
-    <div class="row-fluid">
-      <div class="span12">
+<div id="content-header">
+  <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fa fa-home"></i> Home</a> <a href="#" class="tip-bottom">Manage Product</a> <a href="#" class="current">Add Product</a> </div>
+  <h1>Product Entry Form</h1>
+</div>
+<form role="form" action="index.php" method="POST">
+            <?php 
 
-      <div class='widget-box'>
-          <div class='widget-title'> <span class='icon'> <i class='fas fa-cogs'></i> </span>
-            <h5>Product table</h5>
-          </div>
-          <div class='widget-content nopadding'>
-	  
-	  <?php
+if(isset($_POST['item_name'])){
+$name = $_POST["item_name"];    
+$Brand = $_POST["Brand"];
+$flavor = $_POST["Flavor"];
+$quantity = $_POST["quantity"];
+$amount = $_POST["amount"];
 
-      include "dbcon.php";
-      $qry="select * from products";
-      $cnt = 1;
-        $result=mysqli_query($conn,$qry);
+$totalamount = $amount * $quantity;
 
-        
-          echo"<table class='table table-bordered table-hover'>
-              <thead>
-                <tr>
-                <tr>
-                <th>#</th>
-                  <th>Product Name</th>
-                  <th>Flavor</th>
-                  <th>Brand</th>
-                  <th>Price</th>
-                  <th>  Quantity Available</th>
-                  <th>Action</th>
-                </tr>
-              </thead>";
-              
-            while($row=mysqli_fetch_array($result)){
-            
-            echo"<tbody> 
-               
-                <td><div class='text-center'>".$cnt."</div></td>
-                <td><div class='text-center'>".$row['item_name']."</div></td>
-                <td><div class='text-center'>".$row['flavor']."</div></td>
-                <td><div class='text-center'>".$row['brand']."</div></td>
-                <td><div class='text-center'>₱".$row['price']."</div></td>
-                <td><div class='text-center'>".$row['quantity_available']."</div></td>
-                <td><div class='text-center'><a href='actions/delete-product.php?id=".$row['item_id']."' style='color:#F66;'><i class='fas fa-trash'></i> Remove</a></div></td>
+include 'dbcon.php';
+//code after connection is successfull
+$qry = "INSERT INTO products (item_name, flavor, brand, price, quantity_available) VALUES ('$name', '$flavor', '$Brand', '$amount', '$quantity')";
+$result = mysqli_query($conn,$qry); //query executes
+
+if(!$result){
+  echo"<div class='container-fluid'>";
+      echo"<div class='row-fluid'>";
+      echo"<div class='span12'>";
+      echo"<div class='widget-box'>";
+      echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-info'></i> </span>";
+          echo"<h5>Error Message</h5>";
+          echo"</div>";
+          echo"<div class='widget-content'>";
+              echo"<div class='error_ex'>";
+              echo"<h1 style='color:maroon;'>Error 404</h1>";
+              echo"<h3>Error occured while entering your details</h3>";
+              echo"<p>Please Try Again</p>";
+              echo"<a class='btn btn-warning btn-big'  href='edit-product.php'>Go Back</a> </div>";
+          echo"</div>";
+          echo"</div>";
+      echo"</div>";
+      echo"</div>";
+  echo"</div>";
+}else {
+
+  echo"<div class='container-fluid'>";
+      echo"<div class='row-fluid'>";
+      echo"<div class='span12'>";
+      echo"<div class='widget-box'>";
+      echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-info'></i> </span>";
+          echo"<h5>Message</h5>";
+          echo"</div>";
+          echo"<div class='widget-content'>";
+              echo"<div class='error_ex'>";
+              echo"<h1>Success</h1>";
+              echo"<h3>Product record has been added!</h3>";
+              echo"<p>The requested details are added. Please click the button to go back.</p>";
+              echo"<a class='btn btn-inverse btn-big'  href='product.php'>Go Back</a> </div>";
+          echo"</div>";
+          echo"</div>";
+      echo"</div>";
+      echo"</div>";
+  echo"</div>";
+
+}
+
+}else{
+    echo"<h3>YOU ARE NOT AUTHORIZED TO REDIRECT THIS PAGE. GO BACK to <a href='index.php'> DASHBOARD </a></h3>";
+}
+
+
+?>
+                                    
+                                 
+                                        
                 
-              </tbody>";
-          $cnt++;  }
-            ?>
-
-            </table>
-          </div>
-        </div>
-   
-		
-	
-      </div>
-    </div>
-  </div>
+                                    </form>
+                                </div>
+</div></div>
 </div>
 
 <!--end-main-container-part-->
 
   
-
+ 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 
 <script src="../js/jquery.ui.custom.js"></script> 

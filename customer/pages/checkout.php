@@ -8,7 +8,7 @@ include 'dbcon.php ';
 
 
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 

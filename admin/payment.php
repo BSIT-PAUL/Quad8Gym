@@ -4,7 +4,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@ header('location:../index.php');
 </head>
 <body>
 
-<!--Header-part--><!-- Visit codeastro.com for more projects -->
+<!--Header-part--> 
 <div id="header">
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
   <h1><a href="dashboard.html">Quad 8 Gym</a></h1>
@@ -31,7 +31,7 @@ header('location:../index.php');
 <!--close-Header-part--> 
 
 
-<!--top-Header-menu--><!-- Visit codeastro.com for more projects -->
+<!--top-Header-menu--> 
 <?php include 'includes/topheader.php'?>
 <!--close-top-Header-menu-->
 <!--start-top-serch-->

@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@ header('location:../index.php');
 <!--Header-part-->
 <div id="header">
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
-  <h1><a href="dashboard.html">Quad 8 Gym</a></h1>
+  <h1><a href="dashboard.php">Quad 8 Gym</a></h1>
 </div>
 <!--close-Header-part--> 
 
@@ -43,7 +43,7 @@ header('location:../index.php');
 <!--close-top-serch-->
 
 <!--sidebar-menu-->
-<?php $page='add-equip'; include 'includes/sidebar.php'?>
+<?php $page='add-product'; include 'includes/sidebar.php'?>
 <!--sidebar-menu-->
 
 <div id="content">
@@ -60,27 +60,14 @@ header('location:../index.php');
           <h5>Product-info</h5>
         </div>
         <div class="widget-content nopadding">
-          <form action="add-equipment-req.php" method="POST" class="form-horizontal">
+          <form action="add-product-req.php" method="POST" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">Product :</label>
               <div class="controls">
-                <input type="text" class="span11" name="pname" placeholder="Product Name" required />
+                <input type="text" class="span11" name="item_name" placeholder="Product Name" required />
               </div>
             </div>
-            <div class="control-group">
-              <label class="control-label">Description :</label>
-              <div class="controls">
-                <input type="text" class="span11" name="description" placeholder="Short Description" required />
-              </div>
-            </div>
-           
-            
-            <div class="control-group">
-              <label class="control-label">Date of Expiration :</label>
-              <div class="controls">
-                <input type="date" name="date" class="span11" />
-                <span class="help-block">Please mention the date of expiration</span> </div>
-            </div>
+
 
             <div class="control-group">
               <label class="control-label">Quantity :</label>
@@ -92,7 +79,7 @@ header('location:../index.php');
           
         </div>
      
-        <!-- Visit codeastro.com for more projects -->
+         
         <div class="widget-content nopadding">
           <div class="form-horizontal">
           
@@ -124,26 +111,20 @@ header('location:../index.php');
           <div class="form-horizontal">
             
             <div class="control-group">
-              <label class="control-label">Vendor :</label>
+              <label class="control-label">Brand :</label>
               <div class="controls">
-                <input type="text" class="span11" name="vendor" placeholder="Vendor"required />
+                <input type="text" class="span11" name="Brand" placeholder="Brand"required />
               </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label">Flavor :</label>
               <div class="controls">
-                <input type="text" class="span11" name="address" placeholder="Vendor Address" required />
+                <input type="text" class="span11" name="Flavor" placeholder="Flavor" required />
               </div>
             </div>
 
-            <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
-              <div class="controls">
-                <input type="text" id="mask-phone" name="contact" minlength="10" maxlength="10" class="span8 mask text" required>
-                <span class="help-block blue span8">(999) 999-9999</span> 
-                </div>
-            </div>
+
 
           </div>
 
@@ -161,7 +142,7 @@ header('location:../index.php');
               <div class="controls">
                 <div class="input-append">
                   <span class="add-on">₱</span> 
-                  <input type="number" placeholder="269" name="amount" class="span11" required>
+                  <input type="number" placeholder="###" name="amount" class="span11" required>
                   </div>
               </div>
             </div>
@@ -191,19 +172,7 @@ header('location:../index.php');
 
 <!--end-main-container-part-->
 
-<!--Footer-part-->
-
-<div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
-</div>
-
-<style>
-#footer {
-  color: white;
-}
-</style>
-
-<!--end-Footer-part-->
+  
 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 

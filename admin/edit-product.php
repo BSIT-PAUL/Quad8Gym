@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +31,7 @@ header('location:../index.php');
 </div>
 <!--close-Header-part--> 
 
-<!-- Visit codeastro.com for more projects -->
+ 
 <!--top-Header-menu-->
 <?php include 'includes/topheader.php'?>
 <!--close-top-Header-menu-->
@@ -65,7 +65,7 @@ header('location:../index.php');
 	  <?php
 
       include "dbcon.php";
-      $qry="select * from equipment";
+      $qry="select * from products";
       $cnt = 1;
         $result=mysqli_query($conn,$qry);
 
@@ -74,32 +74,27 @@ header('location:../index.php');
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>E. Name</th>
-                  <th>Description</th>
-                  <th>Qty</th>
-                  <th>Amount</th>
-                  <th>Vendor</th>
-                  <th>Address</th>
-                  <th>Contact</th>
-                  <th>Purchased Date</th>
+                  <th>Product Name</th>
+                  <th>Flavor</th>
+                  <th>Brand</th>
+                  <th>Price</th>
+                  <th>Quantity Available</th>
                   <th>Action</th>
                 </tr>
               </thead>";
-              // <!-- Visit codeastro.com for more projects -->
+              //  
             while($row=mysqli_fetch_array($result)){
             
             echo"<tbody> 
                
                 <td><div class='text-center'>".$cnt."</div></td>
-                <td><div class='text-center'>".$row['name']."</div></td>
-                <td><div class='text-center'>".$row['description']."</div></td>
-                <td><div class='text-center'>".$row['quantity']."</div></td>
-                <td><div class='text-center'>₱".$row['amount']."</div></td>
-                <td><div class='text-center'>".$row['vendor']."</div></td>
-                <td><div class='text-center'>".$row['address']."</div></td>
-                <td><div class='text-center'>".$row['contact']."</div></td>
-                <td><div class='text-center'>".$row['date']."</div></td>
-                <td><div class='text-center'><a href='edit-equipmentform.php?id=".$row['id']."'><i class='fas fa-edit'></i> Edit</a></div></td>
+                <td><div class='text-center'>".$row['item_name']."</div></td>
+                <td><div class='text-center'>".$row['flavor']."</div></td>
+                <td><div class='text-center'>".$row['brand']."</div></td>
+                <td><div class='text-center'>₱".$row['price']."</div></td>
+                <td><div class='text-center'>".$row['quantity_available']."</div></td>
+      
+                <td><div class='text-center'><a href='edit-productform.php?id=".$row['item_id']."'><i class='fas fa-edit'></i> Edit</a></div></td>
                 
               </tbody>";
            $cnt++; }
@@ -118,20 +113,8 @@ header('location:../index.php');
 
 <!--end-main-container-part-->
 
-<!--Footer-part-->
-
-<div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
-</div>
-
-<style>
-#footer {
-  color: white;
-}
-</style>
-
-<!--end-Footer-part-->
-<!-- Visit codeastro.com for more projects -->
+  
+ 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 
 <script src="../js/jquery.ui.custom.js"></script> 

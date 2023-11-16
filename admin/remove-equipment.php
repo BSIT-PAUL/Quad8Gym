@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +29,7 @@ header('location:../index.php');
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
   <h1><a href="dashboard.html">Quad 8 Gym</a></h1>
 </div>
-<!--close-Header-part--> <!-- Visit codeastro.com for more projects -->
+<!--close-Header-part-->  
 
 
 <!--top-Header-menu-->
@@ -117,19 +117,7 @@ header('location:../index.php');
 
 <!--end-main-container-part-->
 
-<!--Footer-part-->
-
-<div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
-</div>
-
-<style>
-#footer {
-  color: white;
-}
-</style>
-
-<!--end-Footer-part-->
+  
 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 

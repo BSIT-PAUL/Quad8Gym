@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +53,7 @@ $qry= "select * from members where user_id='$id'";
 $result=mysqli_query($conn,$qry);
 while($row=mysqli_fetch_array($result)){
 ?> 
-<!-- Visit codeastro.com for more projects -->
+ 
 <div id="content">
 <div id="content-header">
   <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="tip-bottom">Manamge Members</a> <a href="#" class="current">Add Members</a> </div>
@@ -112,7 +112,7 @@ while($row=mysqli_fetch_array($result)){
         
         <div class="widget-content nopadding">
           <div class="form-horizontal">
-          <!-- Visit codeastro.com for more projects -->
+           
         </div>
         <div class="widget-content nopadding">
           <div class="form-horizontal">
@@ -146,7 +146,7 @@ while($row=mysqli_fetch_array($result)){
     </div>
 
     
-    <!-- Visit codeastro.com for more projects -->
+     
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
@@ -230,19 +230,7 @@ while($row=mysqli_fetch_array($result)){
 
 <!--end-main-container-part-->
 
-<!--Footer-part-->
-
-<div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
-</div>
-
-<style>
-#footer {
-  color: white;
-}
-</style>
-
-<!--end-Footer-part-->
+  
 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 

@@ -9,7 +9,7 @@
         <li class="<?php if($page=='members-update'){ echo 'active'; }?>"><a href="edit-member.php"><i class="fas fa-arrow-right"></i> Update Member Details</a></li>
       </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="fas fa-briefcase"></i> <span>Product</span> <span class="label label-important"><?php include 'dashboard-equipcount.php';?> </span></a>
+    <li class="submenu"> <a href="#"><i class="fas fa-briefcase"></i> <span>Product</span> <span class="label label-important"><?php include 'dashboard-productcount.php';?> </span></a>
     <ul>
         <li class="<?php if($page=='list-Product'){ echo 'active'; }?>"><a href="Product.php"><i class="fas fa-arrow-right"></i> Product</a></li>
         <li class="<?php if($page=='add-Product'){ echo 'active'; }?>"><a href="Product-entry.php"><i class="fas fa-arrow-right"></i> Add Product</a></li>
@@ -48,7 +48,7 @@
 
      
    
-    <!-- Visit codeastro.com for more projects -->
+     
   </ul>
 </div>
 

@@ -29,7 +29,7 @@ mysqli_close($con);
 
 
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 

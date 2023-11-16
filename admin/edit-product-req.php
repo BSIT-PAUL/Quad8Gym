@@ -1,15 +1,14 @@
 <?php
-session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+  session_start();
+    if(!isset($_SESSION['user_id'])) {
+      header('location:../index.php');	
+    }
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Gym System Staff A/C</title>
+<title>Gym System Admin</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -17,7 +16,8 @@ header('location:../index.php');
 <link rel="stylesheet" href="../css/fullcalendar.css" />
 <link rel="stylesheet" href="../css/matrix-style.css" />
 <link rel="stylesheet" href="../css/matrix-media.css" />
-<link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
+<link href="../font-awesome/css/all.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
@@ -26,14 +26,13 @@ header('location:../index.php');
 <!--Header-part-->
 <div id="header">
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
-  <h1><a href="dashboard.html">Quad 8 Gym Staff A/C</a></h1>
+  <h1><a href="dashboard.php">Quad 8 Gym</a></h1>
 </div>
 <!--close-Header-part--> 
 
 
 <!--top-Header-menu-->
-<?php include '../includes/header.php'?>
-
+<?php include 'includes/topheader.php'?>
 <!--close-top-Header-menu-->
 <!--start-top-serch-->
 <!-- <div id="search">
@@ -41,35 +40,34 @@ header('location:../index.php');
   <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div> -->
 <!--close-top-serch-->
+ 
 <!--sidebar-menu-->
-
-<?php $page="equipment"; include '../includes/sidebar.php'?>
+<?php $page='update-product'; include 'includes/sidebar.php'?>
 
 
 <!--sidebar-menu-->
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="tip-bottom">Manage Equipments</a> <a href="#" class="current">Update Equipment</a> </div>
-  <h1>Update Equipment</h1>
+  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="tip-bottom">Manage Product</a> <a href="#" class="current">Update Product</a> </div>
+  <h1>Update Product</h1>
 </div>
 <form role="form" action="index.php" method="POST">
     <?php 
 
-            if(isset($_POST['name'])){
-            $name = $_POST["name"];    
-            $amount = $_POST["amount"];
-            $vendor = $_POST["vendor"];
-            $description = $_POST["description"];
-            $address = $_POST["address"];
-            $contact = $_POST["contact"];
-            $date = $_POST["date"];
-            $quantity = $_POST["quantity"];
-            $id=$_POST['id'];
+if(isset($_POST['item_name'])){
+  $name = $_POST["item_name"];    
+  $Brand = $_POST["Brand"];
+  $flavor = $_POST["Flavor"];
+  $quantity = $_POST["quantity"];
+  $amount = $_POST["amount"];
+            $id=$_POST['item_id'];
+
+            $totalamount = $amount * $quantity;
             
             include 'dbcon.php';
             //code after connection is successfull
             //update query
-            $qry = "update equipment set name='$name', amount='$amount',vendor='$vendor', description='$description', address='$address', address='$address', contact='$contact', date='$date', quantity='$quantity' where id='$id'";
+            $qry = "update products set item_name='$name', price='$totalamount',brand='$Brand', flavor='$flavor',  quantity_available='$quantity' where item_id='$id'";
             $result = mysqli_query($conn,$qry); //query executes
 
             if(!$result){
@@ -77,7 +75,7 @@ header('location:../index.php');
                     echo"<div class='row-fluid'>";
                     echo"<div class='span12'>";
                     echo"<div class='widget-box'>";
-                    echo"<div class='widget-title'> <span class='icon'> <i class='icon-info-sign'></i> </span>";
+                    echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-info'></i> </span>";
                         echo"<h5>Error Message</h5>";
                         echo"</div>";
                         echo"<div class='widget-content'>";
@@ -85,7 +83,7 @@ header('location:../index.php');
                             echo"<h1 style='color:maroon;'>Error 404</h1>";
                             echo"<h3>Error occured while updating your details</h3>";
                             echo"<p>Please Try Again</p>";
-                            echo"<a class='btn btn-warning btn-big'  href='edit-equipment.php'>Go Back</a> </div>";
+                            echo"<a class='btn btn-warning btn-big'  href='edit-product.php'>Go Back</a> </div>";
                         echo"</div>";
                         echo"</div>";
                     echo"</div>";
@@ -97,21 +95,21 @@ header('location:../index.php');
                     echo"<div class='row-fluid'>";
                     echo"<div class='span12'>";
                     echo"<div class='widget-box'>";
-                    echo"<div class='widget-title'> <span class='icon'> <i class='icon-info-sign'></i> </span>";
+                    echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-info'></i> </span>";
                         echo"<h5>Message</h5>";
                         echo"</div>";
                         echo"<div class='widget-content'>";
                             echo"<div class='error_ex'>";
                             echo"<h1>Success</h1>";
-                            echo"<h3>Equipment details has been updated!</h3>";
+                            echo"<h3>Product details has been updated!</h3>";
                             echo"<p>The requested details are updated. Please click the button to go back.</p>";
-                            echo"<a class='btn btn-inverse btn-big'  href='equipment.php'>Go Back</a> </div>";
+                            echo"<a class='btn btn-inverse btn-big'  href='product.php'>Go Back</a> </div>";
                         echo"</div>";
                         echo"</div>";
                     echo"</div>";
                     echo"</div>";
                 echo"</div>";
-
+                //  
             }
 
             }else{
@@ -126,7 +124,7 @@ header('location:../index.php');
 </div>
 
 <!--end-main-container-part-->
-
+ 
   
 
 <script src="../js/excanvas.min.js"></script> 

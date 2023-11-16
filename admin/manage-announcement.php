@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@ header('location:../index.php');
   <h1><a href="dashboard.html">Quad 8 Gym</a></h1>
 </div>
 <!--close-Header-part--> 
-<!-- Visit codeastro.com for more projects -->
+ 
 
 <!--top-Header-menu-->
 <?php include 'includes/topheader.php'?>
@@ -39,7 +39,7 @@ header('location:../index.php');
 <!-- <div id="search">
   <input type="hidden" placeholder="Search here..."/>
   <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
-</div> --><!-- Visit codeastro.com for more projects -->
+</div> --> 
 <!--close-top-serch-->
 
 <!--sidebar-menu-->
@@ -106,19 +106,7 @@ header('location:../index.php');
 
 <!--end-main-container-part-->
 
-<!--Footer-part-->
-
-<div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
-</div>
-
-<style>
-#footer {
-  color: white;
-}
-</style>
-
-<!--end-Footer-part-->
+  
 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 
