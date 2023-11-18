@@ -54,13 +54,9 @@
                                     <li><a href="courses.php">Courses</a></li>
                                     <li><a href="pricing.php">Pricing</a></li>
                                     <li><a href="gallery.php">Gallery</a></li>
-                                    <li><a href="blog.php">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.php">Blog</a></li>
-                                            <li><a href="blog_details.php">Blog Details</a></li>
-                                            <li><a href="elements.php">Elements</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="blog.php">Products</a>
+                                 
+                                 </li>
                                     <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
@@ -414,7 +410,7 @@
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
-                            <p>You’ll look at graphs and charts in Task One, how to approach </p>
+                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 </p>
                         </div>
                     </div>
                 </div>
@@ -425,8 +421,8 @@
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
-                            <p>(90) 277 278 2566</p>
-                            <p>  (78) 267 256 2578</p>
+                            <p>09264355731</p>
+                            <p>  </p>
                         </div>
                     </div>
                 </div>
@@ -437,8 +433,8 @@
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
-                            <p>TuitionsTonight@gmail.com</p>
-                            <p>tutifyy@gmail.com.com</p>
+                            <p>jmiarafada@gmail.com</p>
+                            <p>.com</p>
                         </div>
                     </div>
                 </div>

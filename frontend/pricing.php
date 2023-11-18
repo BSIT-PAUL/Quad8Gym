@@ -58,13 +58,9 @@
                                     <li><a href="courses.php">Courses</a></li>
                                     <li><a href="pricing.php">Pricing</a></li>
                                     <li><a href="gallery.php">Gallery</a></li>
-                                    <li><a href="blog.php">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.php">Blog</a></li>
-                                            <li><a href="blog_details.php">Blog Details</a></li>
-                                            <li><a href="elements.php">Elements</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="blog.php">Products</a>
+                                 
+                                 </li>
                                     <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
@@ -138,7 +134,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="border-btn border-btn2">Join Now</a>
+                                    <a href="../login.php" class="border-btn border-btn2">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +167,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="border-btn border-btn2">Join Now</a>
+                                    <a href="../login.php" class="border-btn border-btn2">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +201,7 @@
                                     </div>
 
 
-                                    <a href="#" class="border-btn border-btn2">Join Now</a>
+                                    <a href="../login.php" class="border-btn border-btn2">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -236,8 +232,8 @@
                             </div>
                             <div class="features-caption">
                                 <h3>Phone</h3>
-                                <p>(90) 277 278 2566</p>
-                                <p> (78) 267 256 2578</p>
+                                <p>09264355731</p>
+                                <p> </p>
                             </div>
                         </div>
                     </div>
@@ -315,7 +311,7 @@
                                     Copyright &copy;
                                     <script>document.write(new Date().getFullYear());</script> All rights reserved | <i
                                         class="fa fa-heart" aria-hidden="true"></i> <a
-                                        href="https://www.TuitionsTonight.com" target="_blank">Tuitions Tonight</a>
+                                        href="https://www.Quad8 Gym.com" target="_blank">Tuitions Tonight</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>

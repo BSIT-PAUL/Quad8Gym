@@ -22,11 +22,12 @@ include('dbcon.php'); ?>
             <a href="register.php" class="loginbtn">Register now</a>
         </div>
         <form action="#" class="signup-form-container" method="POST">
+        <br>
             <p class="big-heading">Login</p>
             <div class="social-media-platform">
-                <a href="#"><i class='bx bx-sm bxl-facebook' ></i></a>
-                <a href="#"><i class='bx bx-sm bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bx-sm bxl-github' ></i></a>
+                <br>
+                <br>
+                <br>
             </div>
             <div class="login-form-contents">
                 <div class="text-fields username">

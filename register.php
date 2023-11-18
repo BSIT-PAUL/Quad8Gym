@@ -27,12 +27,10 @@ include('dbcon.php'); ?>
             <a href="login.php" class="loginbtn">Login</a>
         </div>
         <form action="#" class="signup-form-container" method="POST">
+        <br>
+
             <p class="big-heading">Create Account</p>
-            <div class="social-media-platform">
-                <a href="#"><i class='bx bx-sm bxl-facebook'></i></a>
-                <a href="#"><i class='bx bx-sm bxl-twitter'></i></a>
-                <a href="#"><i class='bx bx-sm bxl-github'></i></a>
-            </div>
+<br><br>
             <div class="progress-bar">
                 <div class="stage">
                     <p class="tool-tip">Personal info</p>

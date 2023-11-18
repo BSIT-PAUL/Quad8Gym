@@ -56,13 +56,9 @@
                                     <li><a href="courses.php">Courses</a></li>
                                     <li><a href="pricing.php">Pricing</a></li>
                                     <li><a href="gallery.php">Gallery</a></li>
-                                    <li><a href="blog.php">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.php">Blog</a></li>
-                                            <li><a href="blog_details.php">Blog Details</a></li>
-                                            <li><a href="elements.php">Elements</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="blog.php">Products</a>
+                                 
+                                 </li>
                                     <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
@@ -115,7 +111,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.php">Body Building</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
+                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +122,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.php">Muscle Gain</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
+                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +133,7 @@
                         </div>
                         <div class="cat-cap">
                             <h5><a href="services.php">Weight Loss</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
+                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
                         </div>
                     </div>
                 </div>
@@ -156,7 +152,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Personal traning</h3>
-                                    <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
+                                    <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and <br> the language needed for a successful answer.</p>
                                     <a href="courses.php" class="border-btn">View Courses</a>
                                 </div>
                             </div>
@@ -170,7 +166,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Group traning</h3>
-                                    <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
+                                    <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and <br> the language needed for a successful answer.</p>
                                     <a href="courses.php" class="btn">View Courses</a>
                                 </div>
                             </div>
@@ -203,7 +199,7 @@
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
-                            <p>You’ll look at graphs and charts in Task One, how to approach </p>
+                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 </p>
                         </div>
                     </div>
                 </div>
@@ -214,8 +210,8 @@
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
-                            <p>(90) 277 278 2566</p>
-                            <p>  (78) 267 256 2578</p>
+                            <p>09264355731</p>
+                            <p>  </p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +223,7 @@
                         <div class="features-caption">
                             <h3>Email</h3>
                             <p>tuitionstonight@gmail.com</p>
-                            <p>tutifyy@gmail.com</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -286,7 +282,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.TuitionsTonight.com" target="_blank">Tuitions Tonight</a>
+                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Tuitions Tonight</a>
                               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                           </div>
                       </div>
