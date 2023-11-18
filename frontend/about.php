@@ -45,13 +45,13 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.php"><img src="img/TT.png" alt=""></a>
+                            <a href="../index.php"><img src="img/TT.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="../index.php">Home</a></li>
                                     <li><a href="about.php">About</a></li>
                                     <li><a href="courses.php">Courses</a></li>
                                     <li><a href="pricing.php">Pricing</a></li>
@@ -272,7 +272,7 @@
                         <div class="single-footer-caption mb-50 text-center">
                             <!-- logo -->
                             <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <a href="index.php"><img src="img/TT.png" alt=""></a>
+                                <a href="../index.php"><img src="img/TT.png" alt=""></a>
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
@@ -283,7 +283,7 @@
                                         <div class="main-menu main-menu2 text-center">
                                             <nav>
                                                 <ul>
-                                                    <li><a href="index.php">Home</a></li>
+                                                    <li><a href="../index.php">Home</a></li>
                                                     <li><a href="about.php">About</a></li>
                                                     <li><a href="courses.php">Courses</a></li>
                                                     <li><a href="pricing.php">Pricing</a></li>
