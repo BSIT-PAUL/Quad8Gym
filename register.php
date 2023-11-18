@@ -1,4 +1,6 @@
-<?php session_start();
+<?php 
+session_start();
+ob_start();
 include('dbcon.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,14 +65,15 @@ include('dbcon.php'); ?>
                             <input type="text" name="username" required id="username" placeholder="Enter your username">
                         </div>
                         <div class="gender-selection">
-                            <p class="field-heading" required>Gender : </p>
-                            <label for="male">
-                                <input type="radio" name="gender" id="male" required>Male
-                            </label>
-                            <label for="female">
-                                <input type="radio" name="gender" id="female" required>Female
-                            </label>
-                        </div>
+    <p class="field-heading" required>Gender : </p>
+    <label for="male">
+        <input type="radio" name="gender" id="male" value="Male" required>Male
+    </label>
+    <label for="female">
+        <input type="radio" name="gender" id="female" value="Female" required>Female
+    </label>
+</div>
+
                     </div>
                     <div class="pagination-btns">
                         <input type="submit" value="Next" class="nextPage stagebtn1b" onclick="validateForm()" required>
@@ -82,9 +85,9 @@ include('dbcon.php'); ?>
                             <label for="phone"><i class='bx bx-phone'></i></label>
                             <input type="text" name="phone" required id="phone" placeholder="Phone number">
                         </div>
-                        <div class="text-fields email required">
-                            <label for="email"><i class='bx bx-envelope'></i></label>
-                            <input type="email" name="email" required id="email" placeholder="Enter your email">
+                        <div class="text-fields address required">
+                            <label for="address"><i class='bx bx-envelope'></i></label>
+                            <input type="address" name="address" required id="address" placeholder="Enter your address">
                         </div>
                     </div>
                     <div class="button-container">
@@ -102,18 +105,21 @@ include('dbcon.php'); ?>
                         <input type="button" value="Next" class="nextPage stagebtn1b" onclick="validateStage2()">
                     </div>
                 </div>
+                <input type="hidden" name="duration" id="duration" value="1">
 
                 <div class="stage3-content">
                     <div class="controls">
                         <div class="main_input_box">
-                            <label for="plan">Select a Plan:</label>
-                            <select name="plan" required id="plan">
-                                <option value="" disabled selected>Select Plans</option>
-                                <option value="1">One Month</option>
-                                <option value="3">Three Month</option>
-                                <option value="6">Six Month</option>
-                                <option value="12">One Year</option>
-                            </select>
+<label for="plan">Select a Plan:</label>
+<select name="plan" required id="plan" onchange="updatePlanDuration()">
+    <option value="" disabled selected>Select Plans</option>
+    <option value="25|1">25 - DAILY PLAN - Student</option>
+    <option value="30|1">30 - DAILY PLAN - Non Student</option>
+    <option value="110|7">110 - WEEKLY PLAN- Student</option>
+    <option value="130|7">130 - WEEKLY PLAN- Non Student</option>
+    <option value="375|30">375 - MONTHLY PLAN - Student</option>
+    <option value="430|30">430 - MONTHLY PLAN - Non Student</option>
+</select>
                         </div>
                     </div>
 
@@ -175,12 +181,12 @@ include('dbcon.php'); ?>
 
     function validateStage2() {
         var phoneValue = document.getElementById("phone").value;
-        var emailValue = document.getElementById("email").value;
+        var addressValue = document.getElementById("address").value;
         var passwordValue = document.getElementById("password").value;
         var confirmPasswordValue = document.getElementById("confirmpassword").value;
 
         // Check if the required fields are filled out
-        if (phoneValue === "" || emailValue === "" || passwordValue === "" || confirmPasswordValue === "") {
+        if (phoneValue === "" || addressValue === "" || passwordValue === "" || confirmPasswordValue === "") {
             alert("Please fill out all required fields.");
         } else {
             // Check if phone number is exactly 11 digits and contains only numeric digits
@@ -228,6 +234,73 @@ include('dbcon.php'); ?>
         signupContent2.style.display = "block"
     }
 </script>
+<script>
+    function updatePlanDuration() {
+        var planSelect = document.getElementById("plan");
+        var durationInput = document.getElementById("duration");
+
+        // Split the selected value into an array [price, duration]
+        var selectedPlan = planSelect.value.split("|");
+
+        // Update the duration input field
+        durationInput.value = selectedPlan[1];
+    }
+</script>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve data from the form
+    $selectedPlan = $_POST['plan'];
+$planDetails = explode("|", $selectedPlan);
+$amount = $planDetails[0];
+$plan = $planDetails[1];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $username = $_POST['username'];
+    $gender = $_POST['gender'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    $passwords = $_POST["password"];
+    $password = md5($passwords);
+    $services = $_POST['services'];
+
+    // Additional data that may need to be collected or set based on your application logic
+    $dor = date('Y-m-d'); // Date of registration
+    $paid_date = null; // You may set this when payment is made
+    $p_year = date('Y'); // Year of registration
+    $status = "Active"; // Assuming new members are active by default
+    $attendance_count = 0; // Initial attendance count
+    $ini_weight = null; // Initial weight (you may retrieve this from the form)
+    $curr_weight = null; // Current weight (you may update this as needed)
+    $ini_bodytype = ""; // Initial body type (you may retrieve this from the form)
+    $curr_bodytype = ""; // Current body type (you may update this as needed)
+    $progress_date = null; // Date of progress update
+    $reminder = ""; // Any reminders or notes
+
+
+    $sql = "INSERT INTO members (fullname, username, password, gender, dor, services, amount, paid_date, p_year, plan, address, contact, status, attendance_count, ini_weight, curr_weight, ini_bodytype, curr_bodytype, progress_date, reminder) 
+    VALUES ('$fname $lname', '$username', '$password', '$gender', '$dor', '$services', $amount, '$paid_date', '$p_year', '$plan', '$address', '$phone', '$status', $attendance_count, ";
+    $sql .= $ini_weight !== null ? $ini_weight : '0'; // Set a default value of 0 if ini_weight is null
+    $sql .= ", ";
+    $sql .= $curr_weight !== null ? $curr_weight : '0';
+    $sql .= ", '$ini_bodytype', '$curr_bodytype', '$progress_date', '$reminder')";
+    
+    if ($con->query($sql) === TRUE) {
+        header('location: login.php');
+        echo '<script>alert("New record created successfully");</script>';
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $con->error;
+    }
+    
+
+    // Close the database connection
+    $con->close();
+}
+?>
+
+
+
+
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </html>

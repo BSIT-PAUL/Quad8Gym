@@ -103,7 +103,7 @@ header('location:../index.php');
                       <td><div class="text-center"><?php echo $row['services']; ?></div></td>
                       <td><div class="text-center"><?php if($row['plan'] == 0) { echo 'NONE';} else {echo $row['plan'].' Month/s';} ?></div></td>
                       <td><div class="text-center"><?php echo $row['address']; ?></div></td>
-                      <td><div class="text-center"><?php echo '$'.$row['amount']; ?></div></td>
+                      <td><div class="text-center"><?php echo '₱'.$row['amount']; ?></div></td>
                       <td><div class="text-center"><?php echo $row['attendance_count']; ?> Day/s</div></td>
                     </tr>
                   </tbody>

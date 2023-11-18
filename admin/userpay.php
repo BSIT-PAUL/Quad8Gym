@@ -135,7 +135,7 @@ header('location:../index.php');
 
                                                                     <tr>
                                                                         <td><?php echo 'Charge Per Month'; ?></td>
-                                                                        <td class="alignright"><?php echo '$'.$amount?></td>
+                                                                        <td class="alignright"><?php echo '₱'.$amount?></td>
                                                                     </tr>
                                                                    
                                                                     
