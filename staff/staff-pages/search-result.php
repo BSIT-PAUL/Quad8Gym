@@ -109,7 +109,7 @@ header('location:../index.php');
                 <td><div class='text-center'>".$row['paid_date']."</div></td>
                 <td><div class='text-center'>₱".$row['amount']."</div></td>
                 <td><div class='text-center'>".$row['services']."</div></td>
-                <td><div class='text-center'>".$row['plan']." Days</div></td>
+                <td><div class='text-center'>".$row['plan']." Day/s</div></td>
                 <td><div class='text-center'><a href='user-payment.php?id=".$row['user_id']."'><button class='btn btn-success btn-mini'><i class='icon icon-money'></i> Make Payment</button></a></div></td>
                 
               </tbody>";

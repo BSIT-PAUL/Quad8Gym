@@ -87,7 +87,7 @@ header('location:../index.php');
                 <td><div class='text-center'><?php echo $row['fullname'];?></div></td>
                 <td><div class='text-center'><?php echo $row['contact'];?></div></td>
                 <td><div class='text-center'><?php echo $row['services'];?></div></td>
-                <td><div class='text-center'><?php echo $row['plan'];?> Days</div></td>
+                <td><div class='text-center'><?php echo $row['plan'];?> Day/s</div></td>
                 <td><div class='text-center'><?php if( $row['status'] == 'Active' ){ echo '<i class="icon icon-circle" style="color:green;"></i> Active';} else { echo '<i class="icon icon-circle" style="color:red;"></i> Expired';}?></div></td>
               </tbody>
               <?php $cnt++;  }
