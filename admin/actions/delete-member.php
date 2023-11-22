@@ -16,10 +16,12 @@ $qry="delete from members where user_id=$id";
 $result=mysqli_query($con,$qry);
 
 if($result){
-    echo"DELETED";
-    header('Location:../remove-member.php');
+    echo "alert('Member Deleted Successfully');";
+    echo "window.location.href='../remove-member.php';";
+
 }else{
-    echo"ERROR!!";
+    echo "alert('ERROR!!');";
+
 }
 }
 ?>

@@ -16,10 +16,12 @@ $qry="delete from equipment where id=$id";
 $result=mysqli_query($con,$qry);
 
 if($result){
-    echo"DELETED";
-    header('Location:../remove-equipment.php');
+    echo "alert('Equipment Deleted Successfully');";
+    echo "window.location.href='../remove-equipment.php';";
+
 }else{
-    echo"ERROR!!";
+    echo "alert('ERROR!!');";
+
 }
 }
 ?>

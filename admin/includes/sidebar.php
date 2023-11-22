@@ -15,6 +15,8 @@
         <li class="<?php if($page=='add-Product'){ echo 'active'; }?>"><a href="Product-entry.php"><i class="fas fa-arrow-right"></i> Add Product</a></li>
         <li class="<?php if($page=='remove-Product'){ echo 'active'; }?>"><a href="remove-Product.php"><i class="fas fa-arrow-right"></i> Remove Product</a></li>
         <li class="<?php if($page=='update-Product'){ echo 'active'; }?>"><a href="edit-Product.php"><i class="fas fa-arrow-right"></i> Update Product Details</a></li>
+        <li class="<?php if($page=='list-orders'){ echo 'active'; }?>"><a href="orders.php"><i class="fas fa-arrow-right"></i> Orders</a></li>
+
       </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="fas fa-dumbbell"></i> <span>Gym Equipment</span> <span class="label label-important"><?php include 'dashboard-equipcount.php';?> </span></a>
