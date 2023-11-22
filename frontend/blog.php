@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="black-bg">
     <!--? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -93,13 +93,13 @@
     <!-- Hero End -->
     <!--? Blog Area Start-->
     <section class="blog_area section-padding">
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="assets/img/blog/1.png"  alt="">
+                            <img class="card-img rounded-0" src="assets/img/blog/1.png" alt="">
                                 <a href="../login.php" class="blog_item_date">
                                     <h3>Buy Now</h3>
 
@@ -107,9 +107,9 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Amino Optimum Nutrition</h2>
+                                    <h2 class="blog-head" style="color: #ffffff;">Amino Optimum Nutrition</h2>
                                 </a>
-                                <p>Optimum nutrite is a natural supplement to take your body's natural metabolism. Pre Workout Supplement Powder</p>
+                                <p style="color: #ffffff;">Optimum nutrite is a natural supplement to take your body's natural metabolism. Pre Workout Supplement Powder</p>
                                 <ul class="blog-info-link">
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Grape</a></li>
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: Optimum Nutrition</a></li>
@@ -125,9 +125,9 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Pre-Workout A1</h2>
+                                    <h2 class="blog-head" style="color: #ffffff;">Pre-Workout A1</h2>
                                 </a>
-                                <p> A1 Protein Fuerza is one of the most explosive and most loaded pre workout you will see. Energy, pumps, endurance, focus and more. </p>
+                                <p style="color: #ffffff;"> A1 Protein Fuerza is one of the most explosive and most loaded pre workout you will see. Energy, pumps, endurance, focus and more. </p>
                                 <ul class="blog-info-link">
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Black Currant</a></li>
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
@@ -143,9 +143,9 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Creatine A1</h2>
+                                    <h2 class="blog-head" style="color: #ffffff;">Creatine A1</h2>
                                 </a>
-                                <p>A1 Protein Micronized Creatine Monohydrate is the ultimate muscle-building supplement, providing increased strength, endurance, and faster recovery.</p>
+                                <p style="color: #ffffff;">A1 Protein Micronized Creatine Monohydrate is the ultimate muscle-building supplement, providing increased strength, endurance, and faster recovery.</p>
                                 <ul class="blog-info-link">
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Unflavored</a></li>
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
@@ -168,9 +168,9 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Mass Gainer A1</h2>
+                                    <h2 class="blog-head" style="color: #ffffff;">Mass Gainer A1</h2>
                                 </a>
-                                <p>Introducing A1 Protein's Mass Gainer – the ultimate solution for those seeking to achieve their fitness and muscle-building goals.</p>
+                                <p style="color: #ffffff;">Introducing A1 Protein's Mass Gainer – the ultimate solution for those seeking to achieve their fitness and muscle-building goals.</p>
                                 <ul class="blog-info-link">
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Chocolate Hazelnut</a></li>
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
@@ -186,9 +186,9 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Whey Prothin Ripped</h2>
+                                    <h2 class="blog-head" style="color: #ffffff;">Whey Prothin Ripped</h2>
                                 </a>
-                                <p>Our newest product, the Prothin Whey 60 servings, is gonna be your new choice of protein drink!Packed with lot of benifits this got everything you need! </p>
+                                <p style="color: #ffffff;">Our newest product, the Prothin Whey 60 servings, is gonna be your new choice of protein drink!Packed with lot of benifits this got everything you need! </p>
                                 <ul class="blog-info-link">
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Milk Chocolate</a></li>
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
@@ -204,9 +204,9 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Her Whey A1</h2>
+                                    <h2 class="blog-head" style="color: #ffffff;">Her Whey A1</h2>
                                 </a>
-                                <p>This advanced formula has been specially designed to empower women like you to achieve your health and wellness goals while promoting overall vitality.</p>
+                                <p style="color: #ffffff;">This advanced formula has been specially designed to empower women like you to achieve your health and wellness goals while promoting overall vitality.</p>
                                 <ul class="blog-info-link">
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Wintermelon</a></li>
                                     <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>

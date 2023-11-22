@@ -5249,7 +5249,8 @@ hr {
 /* line 596, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_details {
   padding: 30px 0 20px 10px;
-  box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+  border: 1px solid rgba(255, 254, 254, 0.6);
+
 }
 
 @media (min-width: 768px) {
@@ -5258,7 +5259,9 @@ hr {
     padding: 60px 30px 35px 35px;
   }
 }
-
+.card-img {
+  border: 1px solid grey; /* Set the desired border color and thickness */
+}
 /* line 604, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .blog_details p {
   margin-bottom: 30px;
