@@ -118,7 +118,7 @@ header('location:../index.php');
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
-          <h5>Other Details</h5>
+          <h5>Vendor Details</h5>
         </div>
         <div class="widget-content nopadding">
           <div class="form-horizontal">
@@ -141,7 +141,7 @@ header('location:../index.php');
               <label for="normal" class="control-label">Contact Number</label>
               <div class="controls">
                 <input type="text" id="mask-phone" name="contact" minlength="10" maxlength="10" class="span8 mask text" required>
-                <span class="help-block blue span8">(999) 999-9999</span> 
+                <span class="help-block blue span8">9999999999</span> 
                 </div>
             </div>
 

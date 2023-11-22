@@ -64,6 +64,7 @@ header('location:../index.php');
         </span>
         <h5>Orders table</h5>
     </div>
+
     <div class='widget-content nopadding'>
 
         <?php
@@ -105,7 +106,7 @@ header('location:../index.php');
 
         echo "</tbody></table>";
         ?>
-
+ 
     </div>
 </div>
 

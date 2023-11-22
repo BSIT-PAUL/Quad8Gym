@@ -105,7 +105,7 @@ header('location:../index.php');
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
-          <h5>Other Details</h5>
+          <h5>Vendor Details</h5>
         </div>
         <div class="widget-content nopadding">
           <div class="form-horizontal">

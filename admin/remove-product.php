@@ -46,7 +46,33 @@ header('location:../index.php');
   
 <?php $page='remove-product'; include 'includes/sidebar.php'?>
 <!--sidebar-menu-->
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[id^=confirmDeleteLink]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            var id = link.getAttribute('data-id');
 
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'actions/delete-product.php?id=' + id, true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.status === 'success') {
+                        window.location.href = 'remove-product.php';
+                    } else {
+                        alert('Error deleting product: ' + response.message);
+                    }
+                } else {
+                    alert('Request failed. Please try again later.');
+                }
+            };
+
+            xhr.send();
+        });
+    });
+});
+</script>
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="remove-product.php" class="current">Remove Product</a> </div>
@@ -95,8 +121,41 @@ header('location:../index.php');
                 <td><div class='text-center'>".$row['brand']."</div></td>
                 <td><div class='text-center'>₱".$row['price']."</div></td>
                 <td><div class='text-center'>".$row['quantity_available']."</div></td>
-                <td><div class='text-center'><a href='actions/delete-product.php?id=".$row['item_id']."' style='color:#F66;'><i class='fas fa-trash'></i> Remove</a></div></td>
-                
+                <td>
+                <div class='text-center'>
+                    <!-- Add the data-id attribute to the link -->
+                    <a href='#' style='color:#F66;' data-toggle='modal' data-target='#deleteModal" .$row['item_id']. "' data-id='".$row['item_id']."'>
+                        <i class='fas fa-trash'></i> Remove
+                    </a>
+                </div>
+            
+                <!-- Delete Modal -->
+                <div class='modal fade' id='deleteModal" .$row['item_id']. "' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                    <div class='modal-dialog' role='document'>
+                        <div class='modal-content'>
+                            <div class='modal-header'>
+                                <h5 class='modal-title' id='exampleModalLabel'>Confirmation</h5>
+                                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                </button>
+                            </div>
+                            <div class='modal-body'>
+                                Are you sure you want to remove this product?
+                            </div>
+                            <div class='modal-footer'>
+                                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
+                                <button type='button' class='btn btn-danger' id='confirmDeleteLink" .$row['item_id']. "' data-id='" .$row['item_id']. "'>
+                                <i class='fas fa-trash'></i> Remove
+                            </button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    </a>
+                </div>
+            </td>
               </tbody>";
           $cnt++;  }
             ?>

@@ -15,13 +15,14 @@ include 'dbcon.php';
 $qry="delete from members where user_id=$id";
 $result=mysqli_query($con,$qry);
 
-if($result){
-    echo "alert('Member Deleted Successfully');";
-    echo "window.location.href='../remove-member.php';";
-
-}else{
-    echo "alert('ERROR!!');";
-
+if ($result) {
+    // Respond with a success message
+    echo json_encode(['status' => 'success']);
+    exit();
+} else {
+    // Respond with an error message
+    echo json_encode(['status' => 'error', 'message' => 'Error deleting member.']);
+    exit();
 }
 }
 ?>

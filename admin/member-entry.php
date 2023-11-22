@@ -110,10 +110,13 @@ header('location:../index.php');
               <label for="normal" class="control-label">Plans: </label>
               <div class="controls">
                 <select name="plan" required="required" id="select">
-                  <option value="1" selected="selected">One Month</option>
-                  <option value="3">Three Month</option>
-                  <option value="6">Six Month</option>
-                  <option value="12">One Year</option>
+                <option value="" selected disabled >Select Plan</option>
+                <option value="25">DAILY PLAN - Student</option>
+    <option value="30">DAILY PLAN - Non Student</option>
+    <option value="110">WEEKLY PLAN- Student</option>
+    <option value="130">WEEKLY PLAN- Non Student</option>
+    <option value="375">MONTHLY PLAN - Student</option>
+    <option value="430">MONTHLY PLAN - Non Student</option>
 
                 </select>
               </div>
@@ -148,7 +151,7 @@ header('location:../index.php');
               <label for="normal" class="control-label">Contact Number</label>
               <div class="controls">
                 <input type="number" id="mask-phone" name="contact" placeholder="9876543210" class="span8 mask text">
-                <span class="help-block blue span8">(999) 999-9999</span> 
+                <span class="help-block blue span8">9999999999</span> 
                 </div>
             </div>
             <div class="control-group">
