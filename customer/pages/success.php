@@ -124,10 +124,26 @@ include 'dbcon.php ';
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <h2 class="text-center mb-4">Gym Product Check Out</h2>
                 <hr>
                 <div class="container mt-5">
-                <h1 class="success-icon">&#10003; Order Placed Successfully</h1>
+                <?php 
+                  echo"<div class='row-fluid'>";
+                  echo"<div class='span12'>";
+                  echo"<div class='widget-box'>";
+                  echo"<div class='widget-title'> <span class='icon'> <i class='icon-info-sign'></i> </span>";
+                      echo"<h5>Message</h5>";
+                      echo"</div>";
+                      echo"<div class='widget-content'>";
+                          echo"<div class='error_ex'>";
+                          echo"<h1>Success</h1>";
+                          echo"<h3>Order has been added!</h3>";
+                          echo"<p>The requested orders are added. Please click the button to go back.</p>";
+                          echo"<a class='btn btn-inverse btn-big'  href='products.php'>Go Back</a> </div>";
+                      echo"</div>";
+                      echo"</div>";
+                  echo"</div>";
+                  echo"</div>";
+                ?>
                 </div>
             </div>
         </div>

@@ -169,13 +169,16 @@ include 'dbcon.php ';
             echo '<h5 class="mt-3">Total Price: $' . number_format($totalPrice, 2) . '</h5>';
 
             // Payment form
-            echo '<form method="post" action="#">';
+            echo '<form method="post" action="#" id="paymentForm">';
             echo '<div class="form-group">';
             echo '<label for="paymentType">Select Payment Type:</label>';
-            echo '<select class="form-control" id="paymentType" name="paymentType">';
-            echo '<option value="COD">Cash on Delivery</option>';
+            echo '<select class="form-control" id="paymentType" name="paymentType" onchange="showImage()">';
+            echo '<option value="COP">Cash on Delivery</option>';
             echo '<option value="Gcash">Gcash</option>';
             echo '</select>';
+            echo '</div>';
+            echo '<div id="gcashImage" style="display:none;">';
+            echo '<img src="396680408_318648987698182_9135085152081392236_n.jpg" alt="" height="200px">';
             echo '</div>';
             echo '<button type="submit" class="btn btn-primary mt-3" name="placeOrder">Place Order</button>';
             echo '</form>';
@@ -187,40 +190,54 @@ include 'dbcon.php ';
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['placeOrder'])) {
-      // Insert order details into the database
-      $userID = $_SESSION['user_id']; // Replace with the actual user ID
-      $orderDate = date("Y-m-d H:i:s"); // Current date and time
-      $paymentType = $_POST['paymentType'];
-  
-      foreach ($cartItems as $item) {
-          $itemName = $item['itemName']; // Replace with the actual criteria
-          $sql = "SELECT item_id, price FROM products WHERE item_name = '$itemName'";
-          $result = $con->query($sql);
-  
-          if ($result->num_rows > 0) {
-              $row = $result->fetch_assoc();
-              $itemID = $row['item_id'];
-              $itemPrice = $row['price'];
-              $quantityOrdered = $item['quantity'];
-              $totalPrice = $itemPrice * $quantityOrdered;
-  
-              // Insert order information into the orders table
-              $sqlInsert = "INSERT INTO orders (userID, item_id, quantity_ordered, price, order_date, paymentType) 
+        // Insert order details into the database
+        $userID = $_SESSION['user_id']; // Replace with the actual user ID
+        $orderDate = date("Y-m-d H:i:s"); // Current date and time
+        $paymentType = $_POST['paymentType'];
+
+        foreach ($cartItems as $item) {
+            $itemName = $item['itemName']; // Replace with the actual criteria
+            $sql = "SELECT item_id, price FROM products WHERE item_name = '$itemName'";
+            $result = $con->query($sql);
+
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                $itemID = $row['item_id'];
+                $itemPrice = $row['price'];
+                $quantityOrdered = $item['quantity'];
+                $totalPrice = $itemPrice * $quantityOrdered;
+
+                // Insert order information into the orders table
+                $sqlInsert = "INSERT INTO orders (userID, item_id, quantity_ordered, price, order_date, paymentType) 
                             VALUES ('$userID', '$itemID', '$quantityOrdered', '$totalPrice', '$orderDate', '$paymentType')";
-  
-              if ($con->query($sqlInsert) !== TRUE) {
-                  echo "Error: " . $sqlInsert . "<br>" . $con->error;
-              }
-          } else {
-              echo '<div class="alert alert-warning" role="alert">Item not found: ' . $itemName . '</div>';
-          }
-      }
+
+                if ($con->query($sqlInsert) !== TRUE) {
+                    echo "Error: " . $sqlInsert . "<br>" . $con->error;
+                }
+            } else {
+                echo '<div class="alert alert-warning" role="alert">Item not found: ' . $itemName . '</div>';
+            }
+        }
 
         // Redirect to success.php using JavaScript
         echo '<script>window.location.href = "success.php";</script>';
         exit(); // Ensure that no further code is executed after the JavaScript redirection
     }
-    ?>
+?>
+
+<script>
+    function showImage() {
+        var paymentType = document.getElementById("paymentType").value;
+        var gcashImage = document.getElementById("gcashImage");
+
+        if (paymentType === "Gcash") {
+            gcashImage.style.display = "block";
+        } else {
+            gcashImage.style.display = "none";
+        }
+    }
+</script>
+
 </div>
 
 
