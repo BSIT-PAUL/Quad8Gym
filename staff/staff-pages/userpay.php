@@ -127,11 +127,11 @@ header('location:../index.php');
                                                                     
                                                                     <tr>
                                                                         <td><?php echo $services; ?></td>
-                                                                        <td class="alignright"><?php echo $plan?> Month/s</td>
+                                                                        <td class="alignright"><?php echo $plan?> Day/s</td>
                                                                     </tr>
 
                                                                     <tr>
-                                                                        <td><?php echo 'Charge Per Month'; ?></td>
+                                                                        <td><?php echo 'Charge Per Day'; ?></td>
                                                                         <td class="alignright"><?php echo ''.$amount?></td>
                                                                     </tr>
                                                                    

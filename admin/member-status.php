@@ -91,7 +91,7 @@ header('location:../index.php');
                 <td><div class='text-center'><?php echo $row['fullname'];?></div></td>
                 <td><div class='text-center'><?php echo $row['contact'];?></div></td>
                 <td><div class='text-center'><?php echo $row['services'];?></div></td>
-                <td><div class='text-center'><?php echo $row['plan'];?> Month/s</div></td>
+                <td><div class='text-center'><?php echo $row['plan'];?> Day/s</div></td>
                 <td><div class='text-center'><?php if( $row['status'] == 'Active' ){ echo '<i class="fas fa-circle" style="color:green;"></i> Active';} else if ($row['status'] == 'Expired') { echo '<i class="fas fa-circle" style="color:red;"></i> Expired';} else { echo '<i class="fas fa-circle" style="color:orange;"></i> Pending Reg';}?></div></td>
                 
               </tbody>

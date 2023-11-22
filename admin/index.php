@@ -380,31 +380,78 @@ $result5=mysqli_query($con,$qry);
       <div class="span6">
        
       <div class="widget-box">
-          <div class="widget-title"> <span class="icon"><i class="fas fa-tasks"></i></span>
-            <h5>Customer's To-Do Lists</h5>
-          </div>
-          <div class="widget-content">
-            <div class="todo">
-              <ul>
-              <?php
+    <div class="widget-title"> <span class="icon"><i class="fas fa-tasks"></i></span>
+        <h5>Customer's To-Do Lists</h5>
+    </div>
+    <style>
+    .sticky-header thead th {
+        position: sticky;
+        top: 0;
+        background-color: #f5f5f5; /* Add background color for better visibility */
+    }
 
-                include "dbcon.php";
-                $qry="SELECT * FROM todo";
-                $result=mysqli_query($con,$qry);
+    .custom-scrollbar {
+        max-height: 300px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #3498db #ecf0f1; /* Set the scrollbar track and thumb colors */
+    }
 
-                while($row=mysqli_fetch_array($result)){ ?>
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 12px; /* Set the width of the scrollbar */
+    }
 
-                <li class='clearfix'> 
-                                                                        
-                    <div class='txt'> <?php echo $row["task_desc"]?> <?php if ($row["task_status"] == "Pending") { echo '<span class="by label label-info">Pending</span>';} else { echo '<span class="by label label-success">In Progress</span>'; }?></div>
-                
-               <?php }
-                echo"</li>";
-              echo"</ul>";
-              ?>
-            </div>
-          </div>
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #3498db; /* Set the color of the scrollbar thumb */
+        border-radius: 6px; /* Set the border radius of the scrollbar thumb */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #ecf0f1; /* Set the color of the scrollbar track */
+    }
+</style>
+
+<div class="widget-content">
+    <div class="todo">
+        <div class="custom-scrollbar">
+            <table class="table table-bordered sticky-header">
+                <thead>
+                    <tr>
+                        <th>User Full Name</th>
+                        <th>Task Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        include "dbcon.php";
+                        $qry = "SELECT t.`id`, t.`task_status`, t.`task_desc`, t.`user_id`, m.`fullname` FROM `todo` t JOIN `members` m ON t.`user_id` = m.`user_id`";
+                        $result = mysqli_query($con, $qry);
+
+                        while ($row = mysqli_fetch_array($result)) { 
+                    ?>
+                        <tr>
+                            <td><?php echo $row["fullname"]; ?></td>
+                            <td><?php echo $row["task_desc"]; ?></td>
+                            <td>
+                                <?php
+                                    if ($row["task_status"] == "Pending") {
+                                        echo '<span class="label label-info">Pending</span>';
+                                    } else {
+                                        echo '<span class="label label-success">In Progress</span>';
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
         </div>
+    </div>
+</div>
+
+</div>
+
        
                 </div>
        

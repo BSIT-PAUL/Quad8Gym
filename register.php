@@ -115,8 +115,8 @@ include('dbcon.php'); ?>
     <option value="30|1">30 - DAILY PLAN - Non Student</option>
     <option value="110|7">110 - WEEKLY PLAN- Student</option>
     <option value="130|7">130 - WEEKLY PLAN- Non Student</option>
-    <option value="375|30">375 - MONTHLY PLAN - Student</option>
-    <option value="430|30">430 - MONTHLY PLAN - Non Student</option>
+    <option value="375|30">375 - DayLY PLAN - Student</option>
+    <option value="430|30">430 - DayLY PLAN - Non Student</option>
 </select>
                         </div>
                     </div>

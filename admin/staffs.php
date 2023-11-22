@@ -39,7 +39,36 @@ header('location:../index.php');
 <!--sidebar-menu-->
 <?php $page='staff-management'; include 'includes/sidebar.php'?>
 <!--sidebar-menu-->
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // JavaScript code to handle deletion confirmation
+    document.querySelectorAll('[id^=confirmDeleteLink]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Get the data-id attribute from the link that triggered the modal
+            var id = link.getAttribute('data-id');
 
+            // Use AJAX to send a request to delete-equipment.php
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'remove-staff.php?id=' + id, true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.status === 'success') {
+                        window.location.href = 'staffs.php';
+                    } else {
+                        alert('Error deleting staff: ' + response.message);
+                    }
+                } else {
+                    alert('Request failed. Please try again later.');
+                }
+            };
+
+            xhr.send();
+        });
+    });
+});
+</script>
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="staffs.php" class="current">Staff Members</a> </div>
@@ -91,7 +120,44 @@ header('location:../index.php');
                 <td><div class='text-center'>".$row['email']."</div></td>
                 <td><div class='text-center'>".$row['address']."</div></td>
                 <td><div class='text-center'>".$row['contact']."</div></td>
-                <td><div class='text-center'><a href='edit-staff-form.php?id=".$row['user_id']."'><i class='fas fa-edit' style='color:#28b779'></i> Edit |</a> <a href='remove-staff.php?id=".$row['user_id']."' style='color:#F66;'><i class='fas fa-trash'></i> Remove</a></div></td>
+                <td>
+                <div class='text-center'>
+                    <!-- Add the data-id attribute to the link -->
+                    <div class='text-center'><a href='edit-staff-form.php?id=".$row['user_id']."'><i class='fas fa-edit' style='color:#28b779'></i> Edit |</a>
+                    <a href='#' style='color:#F66;' data-toggle='modal' data-target='#deleteModal" .$row['user_id']. "' data-id='".$row['user_id']."'>
+                        <i class='fas fa-trash'></i> Remove
+                    </a>
+                </div>
+            
+                <!-- Delete Modal -->
+                <div class='modal fade' id='deleteModal" .$row['user_id']. "' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                    <div class='modal-dialog' role='document'>
+                        <div class='modal-content'>
+                            <div class='modal-header'>
+                                <h5 class='modal-title' id='exampleModalLabel'>Confirmation</h5>
+                                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                </button>
+                            </div>
+                            <div class='modal-body'>
+                                Are you sure you want to remove this staff?
+                            </div>
+                            <div class='modal-footer'>
+                                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
+                                <button type='button' class='btn btn-danger' id='confirmDeleteLink" .$row['user_id']. "' data-id='" .$row['user_id']. "'>
+                                <i class='fas fa-trash'></i> Remove
+                            </button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    </a>
+                </div>
+            </td>
+                
+                
                 </tr>
                 
               </tbody>";

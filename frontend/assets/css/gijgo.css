@@ -2063,7 +2063,7 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] {
     color: rgba(0,0,0,.87);
 }
 
-.gj-picker-md table tr td.other-month div,
+.gj-picker-md table tr td.other-Day div,
 .gj-picker-md table tr td.disabled div {
     color: #BDBDBD; /* Gray 400 */
 }
@@ -2184,7 +2184,7 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] {
     border-radius: 4px;
 }
 
-.gj-picker-bootstrap table tr td.other-month div,
+.gj-picker-bootstrap table tr td.other-Day div,
 .gj-picker-bootstrap table tr td.disabled div {
     color: #777;
 }

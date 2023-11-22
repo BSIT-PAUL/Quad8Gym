@@ -49,7 +49,7 @@
 		this.minViewMode = options.minViewMode||this.element.data('date-minviewmode')||0;
 		if (typeof this.minViewMode === 'string') {
 			switch (this.minViewMode) {
-				case 'months':
+				case 'Days':
 					this.minViewMode = 1;
 					break;
 				case 'years':
@@ -63,7 +63,7 @@
 		this.viewMode = options.viewMode||this.element.data('date-viewmode')||0;
 		if (typeof this.viewMode === 'string') {
 			switch (this.viewMode) {
-				case 'months':
+				case 'Days':
 					this.viewMode = 1;
 					break;
 				case 'years':
@@ -78,7 +78,7 @@
 		this.weekStart = options.weekStart||this.element.data('date-weekstart')||0;
 		this.weekEnd = this.weekStart === 0 ? 6 : this.weekStart - 1;
 		this.fillDow();
-		this.fillMonths();
+		this.fillDays();
 		this.update();
 		this.showMode();
 	};
@@ -138,7 +138,7 @@
 				this.date = new Date(newDate);
 			}
 			this.set();
-			this.viewDate = new Date(this.date.getFullYear(), this.date.getMonth(), 1, 0, 0, 0, 0);
+			this.viewDate = new Date(this.date.getFullYear(), this.date.getDay(), 1, 0, 0, 0, 0);
 			this.fill();
 		},
 		
@@ -155,7 +155,7 @@
 				typeof newDate === 'string' ? newDate : (this.isInput ? this.element.prop('value') : this.element.data('date')),
 				this.format
 			);
-			this.viewDate = new Date(this.date.getFullYear(), this.date.getMonth(), 1, 0, 0, 0, 0);
+			this.viewDate = new Date(this.date.getFullYear(), this.date.getDay(), 1, 0, 0, 0, 0);
 			this.fill();
 		},
 		
@@ -169,60 +169,60 @@
 			this.picker.find('.datepicker-days thead').append(html);
 		},
 		
-		fillMonths: function(){
+		fillDays: function(){
 			var html = '';
 			var i = 0
 			while (i < 12) {
-				html += '<span class="month">'+DPGlobal.dates.monthsShort[i++]+'</span>';
+				html += '<span class="Day">'+DPGlobal.dates.DaysShort[i++]+'</span>';
 			}
-			this.picker.find('.datepicker-months td').append(html);
+			this.picker.find('.datepicker-Days td').append(html);
 		},
 		
 		fill: function() {
 			var d = new Date(this.viewDate),
 				year = d.getFullYear(),
-				month = d.getMonth(),
+				Day = d.getDay(),
 				currentDate = this.date.valueOf();
 			this.picker.find('.datepicker-days th:eq(1)')
-						.text(DPGlobal.dates.months[month]+' '+year);
-			var prevMonth = new Date(year, month-1, 28,0,0,0,0),
-				day = DPGlobal.getDaysInMonth(prevMonth.getFullYear(), prevMonth.getMonth());
-			prevMonth.setDate(day);
-			prevMonth.setDate(day - (prevMonth.getDay() - this.weekStart + 7)%7);
-			var nextMonth = new Date(prevMonth);
-			nextMonth.setDate(nextMonth.getDate() + 42);
-			nextMonth = nextMonth.valueOf();
+						.text(DPGlobal.dates.Days[Day]+' '+year);
+			var prevDay = new Date(year, Day-1, 28,0,0,0,0),
+				day = DPGlobal.getDaysInDay(prevDay.getFullYear(), prevDay.getDay());
+			prevDay.setDate(day);
+			prevDay.setDate(day - (prevDay.getDay() - this.weekStart + 7)%7);
+			var nextDay = new Date(prevDay);
+			nextDay.setDate(nextDay.getDate() + 42);
+			nextDay = nextDay.valueOf();
 			html = [];
 			var clsName;
-			while(prevMonth.valueOf() < nextMonth) {
-				if (prevMonth.getDay() === this.weekStart) {
+			while(prevDay.valueOf() < nextDay) {
+				if (prevDay.getDay() === this.weekStart) {
 					html.push('<tr>');
 				}
 				clsName = '';
-				if (prevMonth.getMonth() < month) {
+				if (prevDay.getDay() < Day) {
 					clsName += ' old';
-				} else if (prevMonth.getMonth() > month) {
+				} else if (prevDay.getDay() > Day) {
 					clsName += ' new';
 				}
-				if (prevMonth.valueOf() === currentDate) {
+				if (prevDay.valueOf() === currentDate) {
 					clsName += ' active';
 				}
-				html.push('<td class="day'+clsName+'">'+prevMonth.getDate() + '</td>');
-				if (prevMonth.getDay() === this.weekEnd) {
+				html.push('<td class="day'+clsName+'">'+prevDay.getDate() + '</td>');
+				if (prevDay.getDay() === this.weekEnd) {
 					html.push('</tr>');
 				}
-				prevMonth.setDate(prevMonth.getDate()+1);
+				prevDay.setDate(prevDay.getDate()+1);
 			}
 			this.picker.find('.datepicker-days tbody').empty().append(html.join(''));
 			var currentYear = this.date.getFullYear();
 			
-			var months = this.picker.find('.datepicker-months')
+			var Days = this.picker.find('.datepicker-Days')
 						.find('th:eq(1)')
 							.text(year)
 							.end()
 						.find('span').removeClass('active');
 			if (currentYear === year) {
-				months.eq(this.date.getMonth()).addClass('active');
+				Days.eq(this.date.getDay()).addClass('active');
 			}
 			
 			html = '';
@@ -264,9 +264,9 @@
 						}
 						break;
 					case 'span':
-						if (target.is('.month')) {
-							var month = target.parent().find('span').index(target);
-							this.viewDate.setMonth(month);
+						if (target.is('.Day')) {
+							var Day = target.parent().find('span').index(target);
+							this.viewDate.setDay(Day);
 						} else {
 							var year = parseInt(target.text(), 10)||0;
 							this.viewDate.setFullYear(year);
@@ -286,15 +286,15 @@
 					case 'td':
 						if (target.is('.day')){
 							var day = parseInt(target.text(), 10)||1;
-							var month = this.viewDate.getMonth();
+							var Day = this.viewDate.getDay();
 							if (target.is('.old')) {
-								month -= 1;
+								Day -= 1;
 							} else if (target.is('.new')) {
-								month += 1;
+								Day += 1;
 							}
 							var year = this.viewDate.getFullYear();
-							this.date = new Date(year, month, day,0,0,0,0);
-							this.viewDate = new Date(year, month, Math.min(28, day),0,0,0,0);
+							this.date = new Date(year, Day, day,0,0,0,0);
+							this.viewDate = new Date(year, Day, Math.min(28, day),0,0,0,0);
 							this.fill();
 							this.set();
 							this.element.trigger({
@@ -341,11 +341,11 @@
 		modes: [
 			{
 				clsName: 'days',
-				navFnc: 'Month',
+				navFnc: 'Day',
 				navStep: 1
 			},
 			{
-				clsName: 'months',
+				clsName: 'Days',
 				navFnc: 'FullYear',
 				navStep: 1
 			},
@@ -358,14 +358,14 @@
 			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
 			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
 			daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
-			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+			Days: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+			DaysShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 		},
 		isLeapYear: function (year) {
 			return (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0))
 		},
-		getDaysInMonth: function (year, month) {
-			return [31, (DPGlobal.isLeapYear(year) ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month]
+		getDaysInDay: function (year, Day) {
+			return [31, (DPGlobal.isLeapYear(year) ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][Day]
 		},
 		parseFormat: function(format){
 			var separator = format.match(/[.\/\-\s].*?/),
@@ -393,7 +393,7 @@
 							break;
 						case 'mm':
 						case 'm':
-							date.setMonth(val - 1);
+							date.setDay(val - 1);
 							break;
 						case 'yy':
 							date.setFullYear(2000 + val);
@@ -409,7 +409,7 @@
 		formatDate: function(date, format){
 			var val = {
 				d: date.getDate(),
-				m: date.getMonth() + 1,
+				m: date.getDay() + 1,
 				yy: date.getFullYear().toString().substring(2),
 				yyyy: date.getFullYear()
 			};
@@ -437,7 +437,7 @@
 									'<tbody></tbody>'+
 								'</table>'+
 							'</div>'+
-							'<div class="datepicker-months">'+
+							'<div class="datepicker-Days">'+
 								'<table class="table-condensed">'+
 									DPGlobal.headTemplate+
 									DPGlobal.contTemplate+

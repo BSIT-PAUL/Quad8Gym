@@ -82,13 +82,13 @@ $(document).ready(function() {
 	//------------- Datepicker -------------//
 	if($('#datepicker').length) {
 		$("#datepicker").datepicker({
-			showOtherMonths:true
+			showOtherDays:true
 		});
 	}
 	if($('#datepicker-inline').length) {
 		$('#datepicker-inline').datepicker({
 	        inline: true,
-			showOtherMonths:true
+			showOtherDays:true
 	    });
 	}
 

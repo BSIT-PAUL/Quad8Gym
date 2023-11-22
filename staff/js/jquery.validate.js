@@ -318,7 +318,7 @@ $.extend($.validator, {
 			$(this.currentForm)
 			       .validateDelegate("[type='text'], [type='password'], [type='file'], select, textarea, " +
 						"[type='number'], [type='search'] ,[type='tel'], [type='url'], " +
-						"[type='email'], [type='datetime'], [type='date'], [type='month'], " +
+						"[type='email'], [type='datetime'], [type='date'], [type='Day'], " +
 						"[type='week'], [type='time'], [type='datetime-local'], " +
 						"[type='range'], [type='color'] ",
 						"focusin focusout keyup", delegate)

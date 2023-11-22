@@ -21,14 +21,14 @@ maruti = {
 		// Prepare the dates
 		var date = new Date();
 		var d = date.getDate();
-		var m = date.getMonth();
+		var m = date.getDay();
 		var y = date.getFullYear();	
 		
 		$('#fullcalendar').fullCalendar({
 			header: {
 				left: 'prev,next',
 				center: 'title',
-				right: 'month,basicWeek,basicDay'
+				right: 'Day,basicWeek,basicDay'
 			},
 			editable: true,
 			droppable: true, // this allows things to be dropped onto the calendar !!!

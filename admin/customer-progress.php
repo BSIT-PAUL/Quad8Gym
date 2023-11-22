@@ -105,7 +105,7 @@ header('location:../index.php');
                 <td><div class='text-center'>".$cnt."</div></td>
                 <td><div class='text-center'>".$row['fullname']."</div></td>
                 <td><div class='text-center'>".$row['services']."</div></td>
-                <td><div class='text-center'>".$row['plan']." Month/s</div></td>
+                <td><div class='text-center'>".$row['plan']." Day/s</div></td>
                 <td><div class='text-center'><a href='update-progress.php?id=".$row['user_id']."'><button class='btn btn-warning btn'> Update Progress</button></a></div></td>
                 
               </tbody>";

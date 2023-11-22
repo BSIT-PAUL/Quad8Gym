@@ -110,7 +110,7 @@ while($row=mysqli_fetch_array($result)){
                       <td><strong><?php echo $row['services']; ?></strong></td>
                     </tr>
                     <tr>
-                      <td>Amount Per Month:</td>
+                      <td>Amount Per Day:</td>
                       <td><input id="amount" type="number" name="amount" value='<?php if($row['services'] == 'Fitness') { echo '55';} elseif ($row['services'] == 'Sauna') { echo '35';} else {echo '40';} ?>' /></td>
                     </tr>
 
@@ -120,9 +120,9 @@ while($row=mysqli_fetch_array($result)){
                     <td class="width70">
 					<div class="controls">
                 <select name="plan" required="required" id="select">
-                  <option value="1" selected="selected" >One Month</option>
-                  <option value="3">Three Month</option>
-                  <option value="6">Six Month</option>
+                  <option value="1" selected="selected" >One Day</option>
+                  <option value="3">Three Day</option>
+                  <option value="6">Six Day</option>
                   <option value="12">One Year</option>
                   <option value="0">None-Expired</option>
 

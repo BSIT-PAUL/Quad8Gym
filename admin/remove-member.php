@@ -127,7 +127,7 @@ header('location:../index.php');
                 <td><div class='text-center'>".$row['address']."</div></td>
                 <td><div class='text-center'>₱".$row['amount']."</div></td>
                 <td><div class='text-center'>".$row['services']."</div></td>
-                <td><div class='text-center'>".$row['plan']." Month/s</div></td>
+                <td><div class='text-center'>".$row['plan']." Day/s</div></td>
                 <td>
                 <div class='text-center'>
                     <!-- Add the data-id attribute to the link -->

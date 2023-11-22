@@ -84,7 +84,7 @@ header('location:../index.php');
                
                 <td><div class='text-center'><?php echo $cnt; ?></div></td>
                 <td><div class='text-center'><?php echo $row['fullname']; ?></div></td>
-                <td><div class='text-center'><?php if($row['plan'] == 1) { echo $row['plan']. ' Month';} else if($row['plan'] == '0') { echo'Expired';} else { echo $row['plan']. ' Months'; } ?></div></td>
+                <td><div class='text-center'><?php if($row['plan'] == 1) { echo $row['plan']. ' Day';} else if($row['plan'] == '0') { echo'Expired';} else { echo $row['plan']. ' Days'; } ?></div></td>
                 <td><div class='text-center'><?php if($row['attendance_count'] == 1) { echo $row['attendance_count']. ' Day';} else if($row['attendance_count'] == '0') { echo'None';} else { echo $row['attendance_count']. ' Days'; } ?>  </div></td>
               </tbody>
            <?php $cnt++; } ?>

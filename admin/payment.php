@@ -110,7 +110,7 @@ header('location:../index.php');
                 
                 <td><div class='text-center'><?php echo '₱'.$row['amount']?></div></td>
                 <td><div class='text-center'><?php echo $row['services']?></div></td>
-                <td><div class='text-center'><?php echo $row['plan']." Month/s"?></div></td>
+                <td><div class='text-center'><?php echo $row['plan']." Day/s"?></div></td>
                 <td><div class='text-center'><a href='user-payment.php?id=<?php echo $row['user_id']?>'><button class='btn btn-success btn'><i class='fas fa-dollar-sign'></i> Make Payment</button></a></div></td>
                 <td><div class='text-center'><a href='sendReminder.php?id=<?php echo $row['user_id']?>'><button class='btn btn-danger btn' <?php echo($row['reminder'] == 1 ? "disabled" : "")?>>Alert</button></a></div></td>
               </tbody>

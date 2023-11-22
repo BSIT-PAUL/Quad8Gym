@@ -149,7 +149,7 @@ input{
     width: 100%;
     padding: 0 3%;
 }
-::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-Day-field,
 ::-webkit-datetime-edit-day-field,
 ::-webkit-datetime-edit-year-field,input::placeholder{
     background-color: #fff;

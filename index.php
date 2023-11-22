@@ -273,7 +273,7 @@
                                 <img src="frontend/assets/img/icon/price.svg" alt="">
                             </div>
                             <div class="properties__caption">
-                                <span class="month">Daily Plan</span>
+                                <span class="Day">Daily Plan</span>
                                 <p class="mb-25">₱25 <span> (student)</span></p>
                                 <p class="mb-25">₱30 <span> (Non-student)</span></p>
                                 <div class="single-features">
@@ -307,7 +307,7 @@
                                     <img src="frontend/assets/img/icon/price.svg" alt="">
                                 </div>
                                 <div class="properties__caption">
-                                    <span class="month">Weekly Plan</span>
+                                    <span class="Day">Weekly Plan</span>
                                     <p class="mb-25">₱110 <span>(student)</span></p>
                                     <p class="mb-25">₱130 <span>(Non-student)</span></p>
                                   
@@ -341,7 +341,7 @@
                                 <img src="frontend/assets/img/icon/price.svg" alt="">
                             </div>
                             <div class="properties__caption">
-                                <span class="month">Monthly Plan</span>
+                                <span class="Day">Dayly Plan</span>
                                 <p class="mb-25">₱375 <span>(student)</span></p>
                                 <p class="mb-25">₱430 <span>(Non-student)</span></p>
                               

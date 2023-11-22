@@ -125,8 +125,8 @@ while($row=mysqli_fetch_array($result)){
     <option value="30">DAILY PLAN - Non Student</option>
     <option value="110">WEEKLY PLAN- Student</option>
     <option value="130">WEEKLY PLAN- Non Student</option>
-    <option value="375">MONTHLY PLAN - Student</option>
-    <option value="430">MONTHLY PLAN - Non Student</option>
+    <option value="375">DayLY PLAN - Student</option>
+    <option value="430">DayLY PLAN - Non Student</option>
 
                 </select>
               </div>
@@ -184,13 +184,13 @@ while($row=mysqli_fetch_array($result)){
               <div class="controls">
                 <label>
                   <input type="radio" value="Fitness" name="services" />
-                  Fitness <small>- $55 per month</small></label>
+                  Fitness <small>- $55 per Day</small></label>
                 <label>
                   <input type="radio" value="Sauna" name="services" />
-                  Sauna <small>- $35 per month</small></label>
+                  Sauna <small>- $35 per Day</small></label>
                 <label>
                   <input type="radio" value="Cardio" name="services" />
-                  Cardio <small>- $40 per month</small></label>
+                  Cardio <small>- $40 per Day</small></label>
               </div>
             </div>
 

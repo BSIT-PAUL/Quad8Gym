@@ -15,11 +15,14 @@ include 'dbcon.php';
 $qry="delete from staffs where user_id=$id";
 $result=mysqli_query($con,$qry);
 
-if($result){
-    echo"DELETED";
-    header('Location:staffs.php');
-}else{
-    echo"ERROR!!";
+if ($result) {
+    // Respond with a success message
+    echo json_encode(['status' => 'success']);
+    exit();
+} else {
+    // Respond with an error message
+    echo json_encode(['status' => 'error', 'message' => 'Error deleting product.']);
+    exit();
 }
 }
 ?>

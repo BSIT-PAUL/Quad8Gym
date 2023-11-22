@@ -103,7 +103,7 @@ header('location:../index.php');
                       <td><div class="text-center"><?php echo $row['ini_weight']; ?> KG</div></td>
                       <td><div class="text-center"><?php echo $row['curr_weight']; ?> KG</div></td>
                       <td><div class="text-center"><?php echo $row['services']; ?></div></td>
-                      <td><div class="text-center"><?php echo $row['plan']; ?> Month/s</div></td>
+                      <td><div class="text-center"><?php echo $row['plan']; ?> Day/s</div></td>
                     </tr>
                   </tbody>
                 </table>
