@@ -43,7 +43,36 @@ header('location:../index.php');
 <!--sidebar-menu-->
 <?php $page="member"; include '../includes/sidebar.php'?>
 <!--sidebar-menu-->
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+    // JavaScript code to handle deletion confirmation
+    document.querySelectorAll('[id^=confirmDeleteLink]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Get the data-id attribute from the link that triggered the modal
+            var id = link.getAttribute('data-id');
 
+            // Use AJAX to send a request to delete-equipment.php
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'actions/delete-member.php?id=' + id, true);
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.status === 'success') {
+                        window.location.href = 'remove-member.php';
+                    } else {
+                        alert('Error deleting member: ' + response.message);
+                    }
+                } else {
+                    alert('Request failed. Please try again later.');
+                }
+            };
+
+            xhr.send();
+        });
+    });
+});
+</script>
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="remove-member.php" class="current">Remove Members</a> </div>
@@ -59,49 +88,82 @@ header('location:../index.php');
             <h5>Member table</h5>
           </div>
           <div class='widget-content nopadding'>
-	  
-	  <?php
+	   
+          <?php
 
-      include "dbcon.php";
-      $qry="select * from members";
-      $cnt = 1;
-        $result=mysqli_query($conn,$qry);
+include "dbcon.php";
+$qry="select * from members";
+$cnt = 1;
+  $result=mysqli_query($conn,$qry);
 
+  
+    echo"<table class='table table-bordered table-hover'>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fullname</th>
+            <th>Username</th>
+            <th>Contact Number</th>
+            <th>D.O.R</th>
+            <th>Address</th>
+            <th>Amount</th>
+            <th>Choosen Service</th>
+            <th>Plan</th>
+            <th>Action</th>
+          </tr>
+        </thead>";
         
-          echo"<table class='table table-bordered table-hover'>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Fullname</th>
-                  <th>Username</th>
-                  <th>Contact Number</th>
-                  <th>D.O.R</th>
-                  <th>Address</th>
-                  <th>Amount</th>
-                  <th>Choosen Service</th>
-                  <th>Plan</th>
-                  <th>Action</th>
-                </tr>
-              </thead>";
+      while($row=mysqli_fetch_array($result)){
+      
+      echo"<tbody> 
+         
+          <td><div class='text-center'>".$cnt."</div></td>
+          <td><div class='text-center'>".$row['fullname']."</div></td>
+          <td><div class='text-center'>@".$row['username']."</div></td>
+          <td><div class='text-center'>".$row['contact']."</div></td>
+          <td><div class='text-center'>".$row['dor']."</div></td>
+          <td><div class='text-center'>".$row['address']."</div></td>
+          <td><div class='text-center'>₱".$row['amount']."</div></td>
+          <td><div class='text-center'>".$row['services']."</div></td>
+          <td><div class='text-center'>".$row['plan']." Day/s</div></td>
+          <td>
+          <div class='text-center'>
+              <!-- Add the data-id attribute to the link -->
+              <a href='#' style='color:#F66;' data-toggle='modal' data-target='#deleteModal" .$row['user_id']. "' data-id='".$row['user_id']."'>
+                  <i class='fas fa-trash'></i> Remove
+              </a>
+          </div>
+      
+          <!-- Delete Modal -->
+          <div class='modal fade' id='deleteModal" .$row['user_id']. "' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+              <div class='modal-dialog' role='document'>
+                  <div class='modal-content'>
+                      <div class='modal-header'>
+                          <h5 class='modal-title' id='exampleModalLabel'>Confirmation</h5>
+                          <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                              <span aria-hidden='true'>&times;</span>
+                          </button>
+                      </div>
+                      <div class='modal-body'>
+                          Are you sure you want to remove this member?
+                      </div>
+                      <div class='modal-footer'>
+                          <button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
+                          <button type='button' class='btn btn-danger' id='confirmDeleteLink" .$row['user_id']. "' data-id='" .$row['user_id']. "'>
+                          <i class='fas fa-trash'></i> Remove
+                      </button>
+                      </div>
+                      
+                  </div>
+                  
+              </div>
               
-            while($row=mysqli_fetch_array($result)){
-            
-            echo"<tbody> 
-               
-                <td><div class='text-center'>".$cnt."</div></td>
-                <td><div class='text-center'>".$row['fullname']."</div></td>
-                <td><div class='text-center'>@".$row['username']."</div></td>
-                <td><div class='text-center'>".$row['contact']."</div></td>
-                <td><div class='text-center'>".$row['dor']."</div></td>
-                <td><div class='text-center'>".$row['address']."</div></td>
-                <td><div class='text-center'>₱".$row['amount']."</div></td>
-                <td><div class='text-center'>".$row['services']."</div></td>
-                <td><div class='text-center'>".$row['plan']." Day/s</div></td>
-                <td><div class='text-center'><a href='actions/delete-member.php?id=".$row['user_id']."' style='color:#F66;'><i class='icon icon-trash'></i> Remove</a></div></td>
-                
-              </tbody>";
-           $cnt++; }
-            ?>
+              </a>
+          </div>
+      </td>
+        </tbody>";
+   $cnt++;   }
+      ?>
 
             </table>
           </div>

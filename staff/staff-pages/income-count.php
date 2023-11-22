@@ -16,7 +16,7 @@ $amountsum = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 $row_amountsum = mysqli_fetch_assoc($amountsum);
 
 if ($row_amountsum['total_amount'] !== null) {
-    echo "Total Amount: " . $row_amountsum['total_amount'];
+    echo "" . $row_amountsum['total_amount'];
 } else {
     echo "No data found in 'members' table.";
 }
