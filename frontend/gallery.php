@@ -174,7 +174,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
+                            <img src="assets/img/icon/icon1.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -185,7 +185,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
+                            <img src="assets/img/icon/icon2.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -197,7 +197,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
+                            <img src="assets/img/icon/icon3.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
@@ -225,31 +225,13 @@
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="../index.php">Home</a></li>
-                                                    <li><a href="about.php">About</a></li>
-                                                    <li><a href="courses.php">Courses</a></li>
-                                                    <li><a href="pricing.php">Pricing</a></li>
-                                                    <li><a href="gallery.php">Gallery</a></li>
-                                                    <li><a href="contact.php">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
+                       
                             <!-- Header End -->
                             <!-- social -->
                             <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="https://www.youtube.com/channel/UCsZydS6Ww6KdeGsYao4lniw"><i class="fab fa-youtube"></i></a>
-                                <a href="https://m.facebook.com/TT7.in/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/tuitionstonight/"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="https://web.facebook.com/p/QUAD8-GYM-100086424797671/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/prothinph/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -261,7 +243,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Tuitions Tonight</a>
+                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Quad 8 Gym</a>
                               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                           </div>
                       </div>

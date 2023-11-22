@@ -107,7 +107,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Personal traning</h3>
-                                    <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and <br> the language needed for a successful answer.</p>
+                                    <p>Personal Training Stronger Together Whether you're new to exercising or a fitness pro, we're here to provide you with personalized coaching and support.</p>
                                     <a href="frontend/courses.php" class="border-btn">View Courses</a>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Group traning</h3>
-                                    <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and <br> the language needed for a successful answer.</p>
+                                    <p>Involves a single trainer guiding a group of members towards their fitness goals. The idea behind group personal training is exercise that is done in a way that is fun, challenging, and personally rewarding.</p>
                                     <a href="frontend/courses.php" class="btn">View Courses</a>
                                 </div>
                             </div>
@@ -146,33 +146,33 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
                         <div class="cat-icon">
-                            <img src="frontend/assets/img/gallery/team1.png" alt="">
+                            <img  src="frontend/assets/img/gallery/311702580_118173164406843_4646327047586168845_n.jpg" height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="frontend/services.php">Body Building</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="frontend/courses.php">Body Building</a></h5>
+                            <p>Practice of progressive resistance exercise to build, control, and develop one's muscles </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="cat-icon">
-                            <img src="frontend/assets/img/gallery/team2.png" alt="">
+                            <img  src="frontend/assets/img/gallery/311590316_110696555154504_5321731325454244673_n.jpg" height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="frontend/services.php">Muscle Gain</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="frontend/courses.php">Muscle Gain</a></h5>
+                            <p>Compound exercises that work different muscles in one movement — like squats, deadlifts, and lunges </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="cat-icon">
-                            <img src="frontend/assets/img/gallery/team3.png" alt="">
+                            <img src="frontend/assets/img/gallery/311008704_107919822098844_3620173618156463730_n.jpg"  height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="frontend/services.php">Weight Loss</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="frontend/courses.php">Weight Loss</a></h5>
+                            <p>One of the best ways to lose body fat is through steady aerobic exercise </p>
                         </div>
                     </div>
                 </div>
@@ -378,20 +378,21 @@
             <div class="right-content2">
                 <!-- img -->
                 <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <img src="frontend/assets/img/gallery/about.png" alt="">
+                    <img src="frontend/assets/img/gallery/400762795_314812298076261_6500892698503846342_n.jpg" alt="">
                 </div>
             </div>
             <div class="left-content2">
                 <!-- section tittle -->
                 <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                     <div class="front-text">
-                        <h2 class="">About Me</h2>
-                        <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and the language needed 
-                            for a successful answer. You’ll examine Task Two questions and learn how to plan, write and 
-                        check academic essays.</p>
-                        <p class="mb-40">Task One, how to approach the task and the language needed for a successful answer. You’ll 
-                        examine Task Two questions and learn how to plan, write and check academic essays.</p>
-                        <a href="frontend/ourses.php" class="border-btn">My Courses</a>
+                        <h2 class="">About Us</h2>
+                        <p>Established on October 8, 2008, Quad8 Gym has become an important part of Nasugbu's fitness scene, with a strong history spanning 15 years. Started by Rizaldy Rafada Jr. upon his return from Korea, the gym was envisioned as a place for fitness in Nasugbu.
+
+</p><p>Under Rizaldy Rafada's skilled management, Quad8 Gym thrived, becoming a go-to spot for those seeking a comprehensive approach to health and wellness. The founder's commitment to promoting a healthy lifestyle was key to the gym's success, making it well-known in Nasugbu.
+</p>
+                        <p class="mb-40">Through the years, Quad8 Gym has become synonymous with top-notch fitness, offering various programs and services tailored to meet the diverse needs of its members. From personalized training to cutting-edge equipment, the gym consistently prioritizes the well-being of its clients.
+</p>
+                        <a href="frontend/courses.php" class="border-btn">Available Courses</a>
                     </div>
                 </div>
             </div>
@@ -405,7 +406,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-9 col-sm-10">
                     <div class="section-tittle text-center mb-100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                        <h2>From Blog</h2>
+                        <h2>Facebook</h2>
                     </div>
                 </div>
             </div>
@@ -414,11 +415,11 @@
                     <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="frontend/assets/img/gallery/blog1.png" alt="">
+                                <img src="frontend/assets/img/gallery/311874050_118984427659050_5365797269602635494_n.jpg" alt="">
                             </div>
                             <div class="blog-cap">
                                 <span>Gym & Fitness</span>
-                                <h3><a href="frontend/blog_details.php">Your Antibiotic One Day To 10 Day Options</a></h3>
+                                <h3><a href="frontend/blog.php">Your Antibiotic One Day To 10 Day Options</a></h3>
                             </div>
                         </div>
                     </div>
@@ -427,11 +428,11 @@
                     <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="frontend/assets/img/gallery/blog2.png" alt="">
+                                <img src="frontend/assets/img/gallery/311883474_113736564850503_3465794185645633217_n.jpg" alt="">
                             </div>
                             <div class="blog-cap">
                                 <span>Gym & Fitness</span>
-                                <h3><a href="frontend/blog_details.php">Your Antibiotic One Day To 10 Day Options</a></h3>
+                                <h3><a href="frontend/blog.php">Your Antibiotic One Day To 10 Day Options</a></h3>
                             </div>
                         </div>
                     </div>
@@ -458,7 +459,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <div class="features-icon">
-                            <img src="frontend/assets/img/icon/icon1.svg" alt="">
+                            <img src="frontend/assets/img/icon/icon1.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -469,7 +470,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="features-icon">
-                            <img src="frontend/assets/img/icon/icon2.svg" alt="">
+                            <img src="frontend/assets/img/icon/icon2.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -481,7 +482,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
                         <div class="features-icon">
-                            <img src="frontend/assets/img/icon/icon3.svg" alt="">
+                            <img src="frontend/assets/img/icon/icon3.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
@@ -509,25 +510,7 @@
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="index.php">Home</a></li>
-                                                    <li><a href="frontend/about.php">About</a></li>
-                                                    <li><a href="frontend/courses.php">Courses</a></li>
-                                                    <li><a href="frontend/pricing.php">Pricing</a></li>
-                                                    <li><a href="frontend/gallery.php">Gallery</a></li>
-                                                    <li><a href="frontend/contact.php">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
+                         
                             <!-- Header End -->
                             <!-- social -->
                             <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">

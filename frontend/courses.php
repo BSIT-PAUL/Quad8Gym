@@ -94,46 +94,46 @@
     </div>
     <!-- Hero End -->
     <!--? Team -->
-    <section class="team-area fix section-padding30">
+    <section class="team-area fix">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section-tittle text-center mb-55">
-                        <h2>What we Offer?</h2>
+                    <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                        <h2 >What we Offer?</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30">
+                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
                         <div class="cat-icon">
-                            <img src="assets/img/gallery/team1.png" alt="">
+                            <img  src="assets/img/gallery/311702580_118173164406843_4646327047586168845_n.jpg" height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Body Building</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="courses.php">Body Building</a></h5>
+                            <p>Practice of progressive resistance exercise to build, control, and develop one's muscles </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30">
+                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="cat-icon">
-                            <img src="assets/img/gallery/team2.png" alt="">
+                            <img  src="assets/img/gallery/311590316_110696555154504_5321731325454244673_n.jpg" height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Muscle Gain</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="courses.php">Muscle Gain</a></h5>
+                            <p>Compound exercises that work different muscles in one movement — like squats, deadlifts, and lunges </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30">
+                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="cat-icon">
-                            <img src="assets/img/gallery/team3.png" alt="">
+                            <img src="assets/img/gallery/311008704_107919822098844_3620173618156463730_n.jpg"  height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Weight Loss</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="courses.php">Weight Loss</a></h5>
+                            <p>One of the best ways to lose body fat is through steady aerobic exercise </p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Personal traning</h3>
-                                    <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and <br> the language needed for a successful answer.</p>
+                                    <p>Personal Training Stronger Together Whether you're new to exercising or a fitness pro, we're here to provide you with personalized coaching and support.</p>
                                     <a href="courses.php" class="border-btn">View Courses</a>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Group traning</h3>
-                                    <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and <br> the language needed for a successful answer.</p>
+                                    <p>Involves a single trainer guiding a group of members towards their fitness goals. The idea behind group personal training is exercise that is done in a way that is fun, challenging, and personally rewarding.</p>
                                     <a href="courses.php" class="btn">View Courses</a>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
         <div class="container">
             <div class="video-wrap position-relative">
                 <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="https://youtu.be/bJpn4GWfSTQ"><i class="fas fa-play"></i></a>
+                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=Y9xoKkj71IA"><i class="fas fa-play"></i></a>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
+                            <img src="assets/img/icon/icon1.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -206,7 +206,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
+                            <img src="assets/img/icon/icon2.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -218,7 +218,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
+                            <img src="assets/img/icon/icon3.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
@@ -246,31 +246,13 @@
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="../index.php">Home</a></li>
-                                                    <li><a href="about.php">About</a></li>
-                                                    <li><a href="courses.php">Courses</a></li>
-                                                    <li><a href="pricing.php">Pricing</a></li>
-                                                    <li><a href="gallery.php">Gallery</a></li>
-                                                    <li><a href="contact.php">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <!-- Header End -->
                             <!-- social -->
                             <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="https://www.youtube.com/channel/UCsZydS6Ww6KdeGsYao4lniw"><i class="fab fa-youtube"></i></a>
-                                <a href="https://m.facebook.com/TT7.in/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/tuitionstonight/"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="https://web.facebook.com/p/QUAD8-GYM-100086424797671/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/prothinph/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -282,7 +264,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Tuitions Tonight</a>
+                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Quad 8 Gym</a>
                               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                           </div>
                       </div>

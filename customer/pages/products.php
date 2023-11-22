@@ -171,43 +171,44 @@ include '../includes/sidebar.php';
               </tr>
             </thead>
             <tbody>
-              <?php foreach ($products as $product) : ?>
-                <tr class="cart-item" data-item-name="<?= $product['item_name']; ?>" data-price="<?= $product['price']; ?>">
-                  <td>
-                    <figure class="media">
-                      <div class="img-wrap">
-                        <img src="../img/amino_bottele_square.png" class="img-thumbnail img-sm" alt="Product Image">
-                      </div>
-                      <figcaption class="media-body">
+    <?php foreach ($products as $key => $product) : ?>
+        <tr class="cart-item" data-item-name="<?= $product['item_name']; ?>" data-price="<?= $product['price']; ?>">
+            <td>
+                <div class="img-wrap">
+                    <img src="<?= '../img/' .$key . '.png'; ?>" class="img-thumbnail img-sm" alt="Product Image">
+                </div>
+                <figure class="media">
+                    <figcaption class="media-body">
                         <h6 class="title text-truncate"><?= $product['item_name']; ?></h6>
                         <dl class="param param-inline small">
-                          <dt>Flavor: </dt>
-                          <dd><?= $product['flavor']; ?></dd>
+                            <dt>Flavor: </dt>
+                            <dd><?= $product['flavor']; ?></dd>
                         </dl>
                         <dl class="param param-inline small">
-                          <dt>Brand: </dt>
-                          <dd><?= $product['brand']; ?></dd>
+                            <dt>Brand: </dt>
+                            <dd><?= $product['brand']; ?></dd>
                         </dl>
-                      </figcaption>
-                    </figure>
-                  </td>
-                  <td>
-                    <input type="number" class="form-control quantity" name="quantity[<?= $product['product_id']; ?>]" value="1" min="1">
-                  </td>
-                  <td>
-                    <div class="price-wrap">
-                      <var class="price"><?= '₱ ' . number_format($product['price'], 2); ?></var>
-                      <small class="text-muted">(₱ 10 each)</small>
-                    </div>
-                  </td>
-                  <td class="text-right">
-                    <button type="button" class="btn btn-primary addToCart">
-                      <i class="fas fa-cart-plus"></i> Add to Cart
-                    </button>
-                  </td>
-                </tr>
-              <?php endforeach; ?>
-            </tbody>
+                    </figcaption>
+                </figure>
+            </td>
+            <td>
+                <input type="number" class="form-control quantity" name="quantity[<?= $product['product_id']; ?>]" value="1" min="1">
+            </td>
+            <td>
+                <div class="price-wrap">
+                    <var class="price"><?= '₱ ' . number_format($product['price'], 2); ?></var>
+                    <small class="text-muted">(₱ 10 each)</small>
+                </div>
+            </td>
+            <td class="text-right">
+                <button type="button" class="btn btn-primary addToCart">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</tbody>
+
           </table>
             </div> <!-- table-responsive.// -->
           </div> <!-- card.// -->

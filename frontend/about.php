@@ -85,7 +85,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap hero-cap2 pt-70">
-                            <h2>About Me</h2>
+                            <h2>About Us</h2>
                         </div>
                     </div>
                 </div>
@@ -96,37 +96,37 @@
     <!--? Team -->
     <section class="team-area pt-80">
         <div class="container">
-            <div class="row">
+        <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
                         <div class="cat-icon">
-                            <img src="assets/img/gallery/team1.png" alt="">
+                            <img  src="assets/img/gallery/311702580_118173164406843_4646327047586168845_n.jpg" height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Body Building</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="courses.php">Body Building</a></h5>
+                            <p>Practice of progressive resistance exercise to build, control, and develop one's muscles </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="cat-icon">
-                            <img src="assets/img/gallery/team2.png" alt="">
+                            <img  src="assets/img/gallery/311590316_110696555154504_5321731325454244673_n.jpg" height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Muscle Gain</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="courses.php">Muscle Gain</a></h5>
+                            <p>Compound exercises that work different muscles in one movement — like squats, deadlifts, and lunges </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="cat-icon">
-                            <img src="assets/img/gallery/team3.png" alt="">
+                            <img src="assets/img/gallery/311008704_107919822098844_3620173618156463730_n.jpg"  height="280px" width="350px" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Weight Loss</a></h5>
-                            <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task </p>
+                            <h5><a href="courses.php">Weight Loss</a></h5>
+                            <p>One of the best ways to lose body fat is through steady aerobic exercise </p>
                         </div>
                     </div>
                 </div>
@@ -137,28 +137,29 @@
     <!--? About Area-2 Start -->
     <section class="about-area2 fix pb-padding pt-50 pb-80">
         <div class="support-wrapper align-items-center">
-            <div class="right-content2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
+            <div class="right-content2">
                 <!-- img -->
-                <div class="right-img">
-                    <img src="assets/img/gallery/about.png" alt="">
+                <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                    <img src="assets/img/gallery/400762795_314812298076261_6500892698503846342_n.jpg" alt="">
                 </div>
             </div>
             <div class="left-content2">
                 <!-- section tittle -->
                 <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                     <div class="front-text">
-                        <h2 class="">About Me</h2>
-                        <p>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS, 4231 the task and the language needed 
-                            for a successful answer. You’ll examine Task Two questions and learn how to plan, write and 
-                        check academic essays.</p>
-                        <p class="mb-40">Task One, how to approach the task and the language needed for a successful answer. You’ll 
-                        examine Task Two questions and learn how to plan, write and check academic essays.</p>
-                        <a href="courses.php" class="border-btn">My Courses</a>
+                        <h2 class="">About Us</h2>
+                        <p>Established on October 8, 2008, Quad8 Gym has become an important part of Nasugbu's fitness scene, with a strong history spanning 15 years. Started by Rizaldy Rafada Jr. upon his return from Korea, the gym was envisioned as a place for fitness in Nasugbu.
+
+</p><p>Under Rizaldy Rafada's skilled management, Quad8 Gym thrived, becoming a go-to spot for those seeking a comprehensive approach to health and wellness. The founder's commitment to promoting a healthy lifestyle was key to the gym's success, making it well-known in Nasugbu.
+</p>
+                        <p class="mb-40">Through the years, Quad8 Gym has become synonymous with top-notch fitness, offering various programs and services tailored to meet the diverse needs of its members. From personalized training to cutting-edge equipment, the gym consistently prioritizes the well-being of its clients.
+</p>
+                        <a href="courses.php" class="border-btn">Available Courses</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
     <!-- About Area End -->
     <!--? Blog Area Start -->
     <section class="home-blog-area pt-10 pb-50">
@@ -167,33 +168,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-9 col-sm-10">
                     <div class="section-tittle text-center mb-100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                        <h2>From Blog</h2>
+                        <h2>Facebook</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog1.png" alt="">
+                                <img src="assets/img/gallery/311874050_118984427659050_5365797269602635494_n.jpg" alt="">
                             </div>
                             <div class="blog-cap">
                                 <span>Gym & Fitness</span>
-                                <h3><a href="blog_details.php">Your Antibiotic One Day To 10 Day Options</a></h3>
+                                <h3><a href="blog.php">Your Antibiotic One Day To 10 Day Options</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog2.png" alt="">
+                                <img src="assets/img/gallery/311883474_113736564850503_3465794185645633217_n.jpg" alt="">
                             </div>
                             <div class="blog-cap">
                                 <span>Gym & Fitness</span>
-                                <h3><a href="blog_details.php">Your Antibiotic One Day To 10 Day Options</a></h3>
+                                <h3><a href="blog.php">Your Antibiotic One Day To 10 Day Options</a></h3>
                             </div>
                         </div>
                     </div>
@@ -207,7 +208,7 @@
         <div class="container">
             <div class="video-wrap position-relative">
                 <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="https://youtu.be/bJpn4GWfSTQ"><i class="fas fa-play"></i></a>
+                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=Y9xoKkj71IA"><i class="fas fa-play"></i></a>
                 </div>
             </div>
         </div>
@@ -220,7 +221,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
+                            <img src="assets/img/icon/icon1.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -231,7 +232,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
+                            <img src="assets/img/icon/icon2.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -243,13 +244,12 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
+                            <img src="assets/img/icon/icon3.png " alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
                             <p>jmiarafada@gmail.com</p>
                             <p></p>
-                            
                         </div>
                     </div>
                 </div>
@@ -272,31 +272,13 @@
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="../index.php">Home</a></li>
-                                                    <li><a href="about.php">About</a></li>
-                                                    <li><a href="courses.php">Courses</a></li>
-                                                    <li><a href="pricing.php">Pricing</a></li>
-                                                    <li><a href="gallery.php">Gallery</a></li>
-                                                    <li><a href="contact.php">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <!-- Header End -->
                             <!-- social -->
                             <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="https://www.youtube.com/channel/UCsZydS6Ww6KdeGsYao4lniw"><i class="fab fa-youtube"></i></a>
-                                <a href="https://m.facebook.com/TT7.in/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/tuitionstonight/"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="https://web.facebook.com/p/QUAD8-GYM-100086424797671/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/prothinph/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -308,7 +290,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Tuitions Tonight</a>
+                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.Quad8 Gym.com" target="_blank">Quad 8 Gym</a>
                               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                           </div>
                       </div>

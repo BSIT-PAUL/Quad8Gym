@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap hero-cap2 pt-70">
-                            <h2>Blog</h2>
+                            <h2>Products</h2>
                         </div>
                     </div>
                 </div>
@@ -95,304 +95,133 @@
     <section class="blog_area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
+                                <img class="card-img rounded-0" src="assets/img/blog/1.png"  alt="">
+                                <a href="../login.php" class="blog_item_date">
+                                    <h3>Buy Now</h3>
+
                                 </a>
                             </div>
                             <div class="blog_details">
-                                <a class="d-inline-block" href="blog_details.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="../login.php">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Amino Optimum Nutrition</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
+                                <p>Optimum nutrite is a natural supplement to take your body's natural metabolism. Pre Workout Supplement Powder</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Grape</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: Optimum Nutrition</a></li>
                                 </ul>
                             </div>
                         </article>
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="assets/img/blog/single_blog_2.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
+                                <img class="card-img rounded-0" src="assets/img/blog/3.png" alt="">
+                                <a href="../login.php" class="blog_item_date">
+                                    <h3>Buy Now</h3>
                                 </a>
                             </div>
                             <div class="blog_details">
-                                <a class="d-inline-block" href="blog_details.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="../login.php">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Pre-Workout A1</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
+                                <p> A1 Protein Fuerza is one of the most explosive and most loaded pre workout you will see. Energy, pumps, endurance, focus and more. </p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Black Currant</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
                                 </ul>
                             </div>
                         </article>
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
+                                <img class="card-img rounded-0" src="assets/img/blog/2.png" alt="">
+                                <a href="../login.php" class="blog_item_date">
+                                    <h3>Buy Now</h3>
                                 </a>
                             </div>
                             <div class="blog_details">
-                                <a class="d-inline-block" href="blog_details.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="../login.php">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Creatine A1</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
+                                <p>A1 Protein Micronized Creatine Monohydrate is the ultimate muscle-building supplement, providing increased strength, endurance, and faster recovery.</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Unflavored</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="assets/img/blog/4.png"  alt="">
+                                <a href="../login.php" class="blog_item_date">
+                                    <h3>Buy Now</h3>
+
+                                </a>
+                            </div>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="../login.php">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Mass Gainer A1</h2>
+                                </a>
+                                <p>Introducing A1 Protein's Mass Gainer – the ultimate solution for those seeking to achieve their fitness and muscle-building goals.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Chocolate Hazelnut</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
                                 </ul>
                             </div>
                         </article>
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
+                                <img class="card-img rounded-0" src="assets/img/blog/5.png" alt="">
+                                <a href="../login.php" class="blog_item_date">
+                                    <h3>Buy Now</h3>
                                 </a>
                             </div>
                             <div class="blog_details">
-                                <a class="d-inline-block" href="blog_details.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="../login.php">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Whey Prothin Ripped</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
+                                <p>Our newest product, the Prothin Whey 60 servings, is gonna be your new choice of protein drink!Packed with lot of benifits this got everything you need! </p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Milk Chocolate</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
                                 </ul>
                             </div>
                         </article>
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="">
-                                <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
+                                <img class="card-img rounded-0" src="assets/img/blog/6.png" alt="">
+                                <a href="../login.php" class="blog_item_date">
+                                    <h3>Buy Now</h3>
                                 </a>
                             </div>
                             <div class="blog_details">
-                                <a class="d-inline-block" href="blog_details.php">
-                                    <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="../login.php">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Her Whey A1</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
+                                <p>This advanced formula has been specially designed to empower women like you to achieve your health and wellness goals while promoting overall vitality.</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Flavor: Wintermelon</a></li>
+                                    <li><a href="../login.php"><i class="fa fa-heart"></i> Brand: A1</a></li>
                                 </ul>
                             </div>
                         </article>
-                        <nav class="blog-pagination justify-content-center d-flex">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
-                                        <i class="ti-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">1</a>
-                                </li>
-                                <li class="page-item active">
-                                    <a href="#" class="page-link">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
-                                        <i class="ti-angle-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                     
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
-                            <form action="#">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder='Search Keyword'
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Search Keyword'">
-                                        <div class="input-group-append">
-                                            <button class="btns" type="button"><i class="ti-search"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                type="submit">Search</button>
-                            </form>
-                        </aside>
-                        <aside class="single_sidebar_widget post_category_widget">
-                            <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
-                            <ul class="list cat-list">
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Resaurant food</p>
-                                        <p>(37)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Travel news</p>
-                                        <p>(10)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Modern technology</p>
-                                        <p>(03)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Product</p>
-                                        <p>(11)</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Inspiration</p>
-                                        <p>21</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex">
-                                        <p>Health Care (21)</p>
-                                        <p>09</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </aside>
-                        <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                            <div class="media post_item">
-                                <img src="assets/img/post/post_1.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog_details.php">
-                                        <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                                    </a>
-                                    <p>January 12, 2019</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="assets/img/post/post_2.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog_details.php">
-                                        <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
-                                    </a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="assets/img/post/post_3.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog_details.php">
-                                        <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
-                                    </a>
-                                    <p>03 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="assets/img/post/post_4.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog_details.php">
-                                        <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
-                                    </a>
-                                    <p>01 Hours ago</p>
-                                </div>
-                            </div>
-                        </aside>
-                        <aside class="single_sidebar_widget tag_cloud_widget">
-                            <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
-                            <ul class="list">
-                                <li>
-                                    <a href="#">project</a>
-                                </li>
-                                <li>
-                                    <a href="#">love</a>
-                                </li>
-                                <li>
-                                    <a href="#">technology</a>
-                                </li>
-                                <li>
-                                    <a href="#">travel</a>
-                                </li>
-                                <li>
-                                    <a href="#">restaurant</a>
-                                </li>
-                                <li>
-                                    <a href="#">life style</a>
-                                </li>
-                                <li>
-                                    <a href="#">design</a>
-                                </li>
-                                <li>
-                                    <a href="#">illustration</a>
-                                </li>
-                            </ul>
-                        </aside>
 
-                        <aside class="single_sidebar_widget instagram_feeds">
-                            <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
-                            <ul class="instagram_row flex-wrap">
-                                <li>
-                                    <a href="#">
-                                        <img class="img-fluid" src="assets/img/post/post_5.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img class="img-fluid" src="assets/img/post/post_6.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img class="img-fluid" src="assets/img/post/post_7.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img class="img-fluid" src="assets/img/post/post_8.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img class="img-fluid" src="assets/img/post/post_9.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img class="img-fluid" src="assets/img/post/post_10.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </aside>
-                        <aside class="single_sidebar_widget newsletter_widget">
-                            <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                type="submit">Subscribe</button>
-                            </form>
-                        </aside>
+
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -406,7 +235,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
+                            <img src="assets/img/icon/icon1.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Location</h3>
@@ -417,7 +246,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
+                            <img src="assets/img/icon/icon2.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Phone</h3>
@@ -429,7 +258,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-40">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
+                            <img src="assets/img/icon/icon3.png" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>Email</h3>
@@ -456,32 +285,13 @@
                                 <a href="../index.php"><img src="img/TT.png" alt=""></a>
                             </div>
                             <!-- Menu -->
-                            <!-- Header Start -->
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="../index.php">Home</a></li>
-                                                    <li><a href="about.php">About</a></li>
-                                                    <li><a href="courses.php">Courses</a></li>
-                                                    <li><a href="pricing.php">Pricing</a></li>
-                                                    <li><a href="gallery.php">Gallery</a></li>
-                                                    <li><a href="contact.php">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <!-- Header End -->
                             <!-- social -->
                             <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="https://www.youtube.com/channel/UCsZydS6Ww6KdeGsYao4lniw"><i class="fab fa-youtube"></i></a>
-                                <a href="https://m.facebook.com/TT7.in/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/tuitionstonight/"><i class="fab fa-instagram"></i></a>
+                                <a href="../login.php"><i class="fab fa-youtube"></i></a>
+                                <a href="https://web.facebook.com/p/QUAD8-GYM-100086424797671/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/prothinph/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -493,7 +303,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://youtu.be/bJpn4GWfSTQ" target="_blank">Tuitions Tonight</a>
+                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://www.youtube.com/watch?v=Y9xoKkj71IA" target="_blank">Quad 8 Gym</a>
                               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                           </div>
                       </div>
@@ -505,7 +315,7 @@
   </footer>
   <!-- Scroll Up -->
   <div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    <a title="Go to Top" href="../login.php"> <i class="fas fa-level-up-alt"></i></a>
 </div>
 
 <!-- JS here -->
