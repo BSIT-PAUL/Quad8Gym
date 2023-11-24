@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="frontend/assets/css/slick.css">
     <link rel="stylesheet" href="frontend/assets/css/nice-select.css">
     <link rel="stylesheet" href="frontend/assets/css/style.css">
+    
 </head>
 <body class="black-bg">
     <!-- ? Preloader Start -->
@@ -107,7 +108,7 @@
                             <div class="topic-content-box">
                                 <div class="topic-content">
                                     <h3>Personal traning</h3>
-                                    <p>Personal Training Stronger Together Whether you're new to exercising or a fitness pro, we're here to provide you with personalized coaching and support.</p>
+                                    <p>A personal trainer is an individual who creates and delivers safe and effective exercise programs for healthy individuals and groups, or those with medical clearance to exercise.</p>
                                     <a href="frontend/courses.php" class="border-btn">View Courses</a>
                                 </div>
                             </div>
@@ -122,7 +123,7 @@
                                 <div class="topic-content">
                                     <h3>Group traning</h3>
                                     <p>Involves a single trainer guiding a group of members towards their fitness goals. The idea behind group personal training is exercise that is done in a way that is fun, challenging, and personally rewarding.</p>
-                                    <a href="frontend/courses.php" class="btn">View Courses</a>
+                                    <a href="frontend/courses.php" class="border-btn">View Courses</a>
                                 </div>
                             </div>
                         </div>
