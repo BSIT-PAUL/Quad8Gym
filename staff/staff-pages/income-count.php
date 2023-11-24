@@ -1,25 +1,33 @@
 <?php
 
-$servername = "localhost";
-$uname = "root";
-$pass = "";
-$db = "gymnsb";
+$servername="localhost";
+$uname="root";
+$pass="";
+$db="gymnsb";
 
-$conn = mysqli_connect($servername, $uname, $pass, $db);
+$conn=mysqli_connect($servername,$uname,$pass,$db);
 
-if (!$conn) {
-    die("Connection Failed: " . mysqli_connect_error());
+if(!$conn){
+    die("Connection Failed");
 }
+// Query for orders
+$sql_orders = "SELECT SUM(Price) AS order_sum FROM orders WHERE status='Pick-Up'";
+$orders_result = mysqli_query($conn, $sql_orders) or die(mysqli_error($conn));
+$row_orders = mysqli_fetch_assoc($orders_result);
+$order_sum = $row_orders['order_sum'];
 
-$sql = "SELECT SUM(amount) AS total_amount FROM members";
-$amountsum = mysqli_query($conn, $sql) or die(mysqli_error($conn));
-$row_amountsum = mysqli_fetch_assoc($amountsum);
+// Query for members
+$sql_members = "SELECT SUM(amount) AS member_sum FROM members";
+$members_result = mysqli_query($conn, $sql_members) or die(mysqli_error($conn));
+$row_members = mysqli_fetch_assoc($members_result);
+$member_sum = $row_members['member_sum'];
 
-if ($row_amountsum['total_amount'] !== null) {
-    echo "" . $row_amountsum['total_amount'];
-} else {
-    echo "No data found in 'members' table.";
-}
+// Calculate the total sum
+$total_sum = $order_sum + $member_sum;
 
+// Display the total sum
+echo  $total_sum;
+
+// Close the database connection
 mysqli_close($conn);
-?>
+?> 

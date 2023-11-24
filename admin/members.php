@@ -33,7 +33,7 @@ header('location:../index.php');
 
  
 <!--top-Header-menu-->
-<?php include 'includes/topheader.php'?>
+<?php include 'includes/topheader.php'; include 'includes/sidebar.php';?>
 <!--close-top-Header-menu-->
 <!--start-top-serch-->
 <!-- <div id="search">
@@ -43,7 +43,7 @@ header('location:../index.php');
 <!--close-top-serch-->
 
 <!--sidebar-menu-->
-<?php $page="members"; include 'includes/sidebar.php'?>
+<?php $page="members"; ?>
 <!--sidebar-menu-->
 
 <div id="content">

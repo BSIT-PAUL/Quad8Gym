@@ -18,7 +18,7 @@ header('location:../index.php');
 <link rel="stylesheet" href="../css/fullcalendar.css" />
 <link rel="stylesheet" href="../css/matrix-style.css" />
 <link rel="stylesheet" href="../css/matrix-media.css" />
-<script src="https://kit.fontawesome.com/d714e2950d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="../css/jquery.gritter.css" />
+<script src="https://kit.fontawesome.com/d714e2950d.js" crossorigin="anonymous"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -110,7 +110,7 @@ header('location:../index.php');
     <div class="row-fluid">
       <div class="span6">
         <div class="widget-box">
-          <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="icon-chevron-down"></i></span>
+          <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="fa-solid fa-bullhorn fa-beat"></i></span>
             <h5>Gym Announcement</h5>
           </div>
           <div class="widget-content nopadding collapse in" id="collapseG2">
