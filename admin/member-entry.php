@@ -174,13 +174,13 @@ header('location:../index.php');
               <div class="controls">
                 <label>
                   <input type="radio" value="Fitness" name="services" />
-                  Fitness <small>- $55 per Day</small></label>
+                  Fitness <small>- ₱55 per Day</small></label>
                 <label>
                   <input type="radio" value="Sauna" name="services" />
-                  Sauna <small>- $35 per Day</small></label>
+                  Sauna <small>- ₱35 per Day</small></label>
                 <label>
                   <input type="radio" value="Cardio" name="services" />
-                  Cardio <small>- $40 per Day</small></label>
+                  Cardio <small>- ₱40 per Day</small></label>
               </div>
             </div>
 

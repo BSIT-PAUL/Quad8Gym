@@ -18,8 +18,7 @@ header('location:../index.php');
 <link rel="stylesheet" href="../css/fullcalendar.css" />
 <link rel="stylesheet" href="../css/matrix-style.css" />
 <link rel="stylesheet" href="../css/matrix-media.css" />
-<link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
-<link rel="stylesheet" href="../css/jquery.gritter.css" />
+<script src="https://kit.fontawesome.com/d714e2950d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="../css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -147,7 +146,7 @@ header('location:../index.php');
       <div class="span6">
        
       <div class="widget-box">
-    <div class="widget-title"> <span class="icon"><i class="fas fa-tasks"></i></span>
+    <div class="widget-title"> <span class="icon"><i class="fas fa-tasks fa-beat-fade"></i></span>
         <h5>Customer's To-Do Lists</h5>
     </div>
     <style>

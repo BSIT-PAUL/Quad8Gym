@@ -56,56 +56,91 @@ header('location:../index.php');
     <hr>
     <div class="row-fluid">
       <div class="span12">
+<!-- Filter Form -->
+<div class="row-fluid">
+  <div class="span12">
+  <form method="post" action="">
+  <div class="form-group">
+    <label for="statusFilter">Filter by Status:</label>
+    <select class="form-control" name="statusFilter" id="statusFilter">
+      <option value="">All</option>
+      <option value="Pick-up">Pick-up</option>
+      <option value="Pending">Pending</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Apply Filter</button>
+</form>
+
+  </div>
+</div>
 
       <div class='widget-box'>
     <div class='widget-title'>
         <span class='icon'>
             <i class='fas fa-cogs'></i>
         </span>
+        
         <h5>Orders table</h5>
     </div>
 
     <div class='widget-content nopadding'>
+    <?php
+include "dbcon.php";
 
-        <?php
-        include "dbcon.php";
-        $qry = "SELECT m.`fullname` AS `customer_name`, o.`order_id`, p.`item_name`, SUM(o.`quantity_ordered`) AS `total_quantity_ordered`, SUM(o.`Price`) AS `total_price`, MAX(o.`order_date`) AS `latest_order_date`, o.`paymentType`, o.`status` FROM `orders` o JOIN `members` m ON o.`userID` = m.`user_id` JOIN `products` p ON o.`item_id` = p.`item_id` GROUP BY m.`fullname`, o.`order_id`, p.`item_name`, o.`paymentType`, o.`status`";
-        $cnt = 1;
-        $result = mysqli_query($conn, $qry);
+// Check if the form is submitted and filter value is set
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['statusFilter'])) {
+  $statusFilter = $_POST['statusFilter'];
+  $statusFilterCondition = ($statusFilter != "") ? " AND o.`status` = '$statusFilter'" : "";
+} else {
+  $statusFilterCondition = "";
+}
 
-        echo "<table class='table table-bordered table-hover'>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Customer Name</th>
-                  <th>Order ID</th>
-                  <th>Product Name</th>
-                  <th>Quantity Ordered</th>
-                  <th>Total Price</th>
-                  <th>Payment Type</th>
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>";
+$qry = "SELECT m.`fullname` AS `customer_name`, o.`order_id`, p.`item_name`, 
+        SUM(o.`quantity_ordered`) AS `total_quantity_ordered`, 
+        SUM(o.`Price`) AS `total_price`, MAX(o.`order_date`) AS `latest_order_date`, 
+        o.`paymentType`, o.`status` 
+        FROM `orders` o 
+        JOIN `members` m ON o.`userID` = m.`user_id` 
+        JOIN `products` p ON o.`item_id` = p.`item_id` 
+        WHERE 1 $statusFilterCondition
+        GROUP BY m.`fullname`, o.`order_id`, p.`item_name`, o.`paymentType`, o.`status`";
+$cnt = 1;
+$result = mysqli_query($conn, $qry);
 
-        while ($row = mysqli_fetch_array($result)) {
-            echo "<tr>
-                <td><div class='text-center'>" . $cnt . "</div></td>
-                <td><div class='text-center'>" . $row['customer_name'] . "</div></td>
-                <td><div class='text-center'>" . $row['order_id'] . "</div></td>
-                <td><div class='text-center'>" . $row['item_name'] . "</div></td>
-                <td><div class='text-center'>" . $row['total_quantity_ordered'] . "</div></td>
-                <td><div class='text-center'>₱" . $row['total_price'] . "</div></td>
-                <td><div class='text-center'>" . $row['paymentType'] . "</div></td>
-                <td><div class='text-center'>" . $row['status'] . "</div></td>
-                <td><div class='text-center'><a href='actions/update-order.php?id=" . $row['order_id'] . "' style='color: green;'><i class='fas fa-check'></i> Pick-up</a></div></td>
-              </tr>";
-            $cnt++;
-        }
+echo "<table class='table table-bordered table-hover'>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Customer Name</th>
+          <th>Order ID</th>
+          <th>Product Name</th>
+          <th>Quantity Ordered</th>
+          <th>Total Price</th>
+          <th>Payment Type</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>";
 
-        echo "</tbody></table>";
-        ?>
+while ($row = mysqli_fetch_array($result)) {
+  echo "<tr>
+      <td><div class='text-center'>" . $cnt . "</div></td>
+      <td><div class='text-center'>" . $row['customer_name'] . "</div></td>
+      <td><div class='text-center'>" . $row['order_id'] . "</div></td>
+      <td><div class='text-center'>" . $row['item_name'] . "</div></td>
+      <td><div class='text-center'>" . $row['total_quantity_ordered'] . "</div></td>
+      <td><div class='text-center'>₱" . $row['total_price'] . "</div></td>
+      <td><div class='text-center'>" . $row['paymentType'] . "</div></td>
+      <td><div class='text-center'>" . $row['status'] . "</div></td>
+      <td><div class='text-center'><a href='actions/update-order.php?id=" . $row['order_id'] . "' style='color: green;'><i class='fas fa-check'></i> Pick-up</a></div></td>
+    </tr>";
+  $cnt++;
+}
+
+echo "</tbody></table>";
+?>
+
  
     </div>
 </div>
