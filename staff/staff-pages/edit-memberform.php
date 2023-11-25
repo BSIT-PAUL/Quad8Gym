@@ -120,8 +120,8 @@ while($row=mysqli_fetch_array($result)){
     <option value="30">DAILY PLAN - Non Student</option>
     <option value="110">WEEKLY PLAN- Student</option>
     <option value="130">WEEKLY PLAN- Non Student</option>
-    <option value="375">DayLY PLAN - Student</option>
-    <option value="430">DayLY PLAN - Non Student</option>
+    <option value="375">MONTHLY PLAN - Student</option>
+    <option value="430">MONTHLY PLAN - Non Student</option>
 
                 </select>
               </div>

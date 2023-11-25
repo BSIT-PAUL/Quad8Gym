@@ -342,7 +342,7 @@
                                 <img src="frontend/assets/img/icon/price.svg" alt="">
                             </div>
                             <div class="properties__caption">
-                                <span class="Day">Dayly Plan</span>
+                                <span class="Day">Monthly Plan</span>
                                 <p class="mb-25">₱375 <span>(student)</span></p>
                                 <p class="mb-25">₱430 <span>(Non-student)</span></p>
                               
