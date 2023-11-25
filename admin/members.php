@@ -33,8 +33,7 @@ header('location:../index.php');
 
  
 <!--top-Header-menu-->
-<?php include 'includes/topheader.php'; include 'includes/sidebar.php';?>
-<!--close-top-Header-menu-->
+<?php include 'includes/topheader.php'?><!--close-top-Header-menu-->
 <!--start-top-serch-->
 <!-- <div id="search">
   <input type="hidden" placeholder="Search here..."/>
@@ -43,8 +42,7 @@ header('location:../index.php');
 <!--close-top-serch-->
 
 <!--sidebar-menu-->
-<?php $page="members"; ?>
-<!--sidebar-menu-->
+<?php $page="members"; include 'includes/sidebar.php'?><!--sidebar-menu-->
 
 <div id="content">
   <div id="content-header">

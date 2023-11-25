@@ -247,10 +247,10 @@ $result5=mysqli_query($con,$qry);
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
-        <li class="bg_ls span"> <a href="index.php" style="font-size: 16px;"> <i class="fa-solid fa-user-check fa-beat-fade"></i><span class="label label-important"><?php include'actions/dashboard-activecount.php'?></span> Active Members </a> </li>
-        <li class="bg_lo span3"> <a href="members.php" style="font-size: 16px;"> <i class="fa-solid fa-users fa-beat-fade" style="color: #fafafa;"></i></i><span class="label label-important"><?php include'dashboard-usercount.php'?></span> Registered Members</a> </li>
-        <li class="bg_lg span3"> <a href="payment.php" style="font-size: 16px;"> <i class="fa-solid fa-peso-sign fa-beat-fade"></i> Total Earnings: ₱<?php include'income-count.php' ?></a> </li>
-        <li class="bg_lb span2"> <a href="announcement.php" style="font-size: 16px;"><i class="fa-solid fa-scroll fa-beat-fade"></i><span class="label label-important"><?php include'actions/count-announcements.php'?></span>Announcements </a> </li>
+        <li class="bg_ls span"> <a href="index.php" style="font-size: 16px;"> <i class="fa-solid fa-user-check fa-beat-fade"></i><span class="label label-important"><?php include 'actions/dashboard-activecount.php'?></span> Active Members </a> </li>
+        <li class="bg_lo span3"> <a href="members.php" style="font-size: 16px;"> <i class="fa-solid fa-users fa-beat-fade"></i></i><span class="label label-important"><?php include 'dashboard-usercount.php'?></span> Registered Members</a> </li>
+        <li class="bg_lg span3"> <a href="payment.php" style="font-size: 16px;"> <i class="fa-solid fa-peso-sign fa-beat-fade"></i> Total Earnings: ₱<?php include 'income-count.php' ?></a> </li>
+        <li class="bg_lb span2"> <a href="announcement.php" style="font-size: 16px;"><i class="fa-solid fa-scroll fa-beat-fade"></i><span class="label label-important"><?php include 'actions/count-announcements.php'?></span>Announcements </a> </li>
 
         
         <!-- <li class="bg_ls span2"> <a href="buttons.html"> <i class="fas fa-tint"></i> Buttons</a> </li>
