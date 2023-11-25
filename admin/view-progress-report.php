@@ -77,10 +77,10 @@ header('location:../index.php');
                     </tr>
                     
                     <tr>
-                      <td>Tel: 231-267-6011</td>
+                      <td>Tel: 09264355731</td>
                     </tr>
                     <tr>
-                      <td >Email: support@Quad8Gym</td>
+                      <td >Email: jmiarafada@gmail.com</td>
                     </tr>
                   </tbody>
                 </table>
@@ -99,7 +99,7 @@ header('location:../index.php');
                   </thead>
                   <tbody>
                     <tr>
-                      <td><div class="text-center">PGC-SS-<?php echo $row['user_id']; ?></div></td>
+                      <td><div class="text-center">Q8G-MI-<?php echo $row['user_id']; ?></div></td>
                       <td><div class="text-center"><?php echo $row['ini_weight']; ?> KG</div></td>
                       <td><div class="text-center"><?php echo $row['curr_weight']; ?> KG</div></td>
                       <td><div class="text-center"><?php echo $row['services']; ?></div></td>

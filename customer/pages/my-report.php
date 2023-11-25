@@ -60,14 +60,14 @@
                       <td><h4>Quad 8 Gym Club</h4></td>
                     </tr>
                     <tr>
-                      <td>5021 Wetzel Lane, Williamsburg</td>
+                      <td>C. ALVAREZ ST. BRGY. POBLACION 3, NASUGBU, BATANGAS</td>
                     </tr>
                     
                     <tr>
-                      <td>Tel: 231-267-6011</td>
+                      <td>Tel: 09264355731</td>
                     </tr>
                     <tr>
-                      <td >Email: support@Quad8Gym</td>
+                      <td >Email: jmiarafada@gmail.com</td>
                     </tr>
                   </tbody>
                 </table>
@@ -87,7 +87,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><div class="text-center">PGC-SS-<?php echo $row['user_id']; ?></div></td>
+                      <td><div class="text-center">Q8G-MI-<?php echo $row['user_id']; ?></div></td>
                       <td><div class="text-center"><?php echo $row['services']; ?></div></td>
                       <td><div class="text-center"><?php echo $row['plan']; ?> Day/s</div></td>
                       <td><div class="text-center"><?php echo $row['address']; ?></div></td>

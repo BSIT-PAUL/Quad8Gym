@@ -84,10 +84,10 @@ while($row=mysqli_fetch_array($result)){
                     </tr>
                     
                     <tr>
-                      <td>Tel: 231-267-6011</td>
+                      <td>Tel: 09264355731</td>
                     </tr>
                     <tr>
-                      <td >Email: support@Quad8Gym</td>
+                      <td >Email: jmiarafada@gmail.com</td>
                     </tr>
                   </tbody>
                 </table>
