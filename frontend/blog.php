@@ -100,10 +100,7 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                             <img class="card-img rounded-0" src="assets/img/blog/1.png" alt="">
-                                <a href="../login.php" class="blog_item_date">
-                                    <h3>Buy Now</h3>
-
-                                </a>
+                                <a href="../login.php" class="border-btn border-btn2">Buy now</a>
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
@@ -119,9 +116,8 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="assets/img/blog/3.png" alt="">
-                                <a href="../login.php" class="blog_item_date">
-                                    <h3>Buy Now</h3>
-                                </a>
+                                
+                                <a href="../login.php" class="border-btn border-btn2">Buy now</a>
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
@@ -137,9 +133,8 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="assets/img/blog/2.png" alt="">
-                                <a href="../login.php" class="blog_item_date">
-                                    <h3>Buy Now</h3>
-                                </a>
+                                <a href="../login.php" class="border-btn border-btn2">Buy now</a>
+                               
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
@@ -161,10 +156,9 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="assets/img/blog/4.png"  alt="">
-                                <a href="../login.php" class="blog_item_date">
-                                    <h3>Buy Now</h3>
+                                <a href="../login.php" class="border-btn border-btn2">Buy now</a>
 
-                                </a>
+                            
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
@@ -180,9 +174,7 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="assets/img/blog/5.png" alt="">
-                                <a href="../login.php" class="blog_item_date">
-                                    <h3>Buy Now</h3>
-                                </a>
+                                <a href="../login.php" class="border-btn border-btn2">Buy now</a>
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">
@@ -198,9 +190,7 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="assets/img/blog/6.png" alt="">
-                                <a href="../login.php" class="blog_item_date">
-                                    <h3>Buy Now</h3>
-                                </a>
+                                <a href="../login.php" class="border-btn border-btn2">Buy now</a>
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="../login.php">

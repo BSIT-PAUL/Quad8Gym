@@ -295,7 +295,7 @@
                                     </div>
                                 </div>
                                
-                                <a href="../login.php" class="border-btn border-btn2">Join Now</a>
+                                <a href="login.php" class="border-btn border-btn2">Join Now</a>
                             </div>
                         </div>
                     </div>
@@ -329,7 +329,7 @@
                                         </div>
                                     </div>
                                   
-                                    <a href="../login.php" class="border-btn border-btn2">Join Now</a>
+                                    <a href="login.php" class="border-btn border-btn2">Join Now</a>
                                 </div>
                             </div>
                         </div>
@@ -364,7 +364,7 @@
                                 </div>
                                
                                
-                                <a href="../login.php" class="border-btn border-btn2">Join Now</a>
+                                <a href="login.php" class="border-btn border-btn2">Join Now</a>
                             </div>
                         </div>
                     </div>
