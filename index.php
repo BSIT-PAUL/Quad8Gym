@@ -443,15 +443,17 @@
     </section>
     <!-- Blog Area End -->
     <!--? video_start -->
-    <div class="video-area section-bg2 d-flex align-items-center"  data-background="frontend/assets/img/gallery/video-bg.png">
-        <div class="container">
-            <div class="video-wrap position-relative">
-                <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=Y9xoKkj71IA"><i class="fas fa-play"></i></a>
-                </div>
+    <div class="video-area section-bg2 d-flex align-items-center">
+    <div class="container">
+        <div class="video-wrap position-relative">
+            <div class="video-icon">
+                <iframe width="1000" height="563" src="https://www.youtube.com/embed/Y9xoKkj71IA?si=OT-3FDAoheq4Kocz&amp;autoplay=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+</div>
+
+
     <!-- video_end -->
     <!-- ? services-area -->
     <section class="services-area">

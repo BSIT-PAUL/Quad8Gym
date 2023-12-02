@@ -24,7 +24,7 @@ $res = $con->query($sql) ;
      $con->query($sql1) ;
 ?>
 <script>
-// alert("Delete Successfully");
+ //alert("Delete Successfully");
 window.location = "../attendance.php";
 </script>
 

@@ -21,6 +21,8 @@ header('location:../index.php');
 <link href="../font-awesome/css/all.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 </head>
 <body>
 
@@ -51,69 +53,71 @@ header('location:../index.php');
   </div>
   <div class="container-fluid">
     <hr>
-    <div class="row-fluid">
-      <div class="span12">
 
-      <div class='widget-box'>
-          <div class='widget-title'> <span class='icon'> <i class='fas fa-th'></i> </span>
-            <h5>Member table</h5>
-          </div>
-          <div class='widget-content nopadding'>
-	  
-	  <?php
+            <form method="post">
+                <label for="recordCount">Number of Records to Display:</label>
+                <input type="number" name="recordCount" id="recordCount" min="1" value="<?php echo isset($_POST['recordCount']) ? $_POST['recordCount'] : 10; ?>" />
+                <input class="btn btn-primary"  type="submit" value="Apply" />
+            </form>
 
-      include "dbcon.php";
-      $qry="select * from members";
-      $cnt = 1;
-        $result=mysqli_query($conn,$qry);
+            <hr>
 
-        
-          echo"<table class='table table-bordered table-hover'>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Fullname</th>
-                  <th>Username</th>
-                  <th>Gender</th>
-                  <th>Contact Number</th>
-                  <th>D.O.R</th>
-                  <th>Address</th>
-                  <th>Amount</th>
-                  <th>Choosen Service</th>
-                  <th>Plan</th>
-                </tr>
-              </thead>";
-              
-            while($row=mysqli_fetch_array($result)){
-            
-            echo"<tbody> 
-               
-                <td><div class='text-center'>".$cnt."</div></td>
-                <td><div class='text-center'>".$row['fullname']."</div></td>
-                <td><div class='text-center'>@".$row['username']."</div></td>
-                <td><div class='text-center'>".$row['gender']."</div></td>
-                <td><div class='text-center'>".$row['contact']."</div></td>
-                <td><div class='text-center'>".$row['dor']."</div></td>
-                <td><div class='text-center'>".$row['address']."</div></td>
-                <td><div class='text-center'>₱".$row['amount']."</div></td>
-                <td><div class='text-center'>".$row['services']."</div></td>
-                <td><div class='text-center'>".$row['plan']." Day/s</div></td>
-             
-                
-              </tbody>";
-          $cnt++;  }
-            ?>
+            <div class="row-fluid">
+                <div class="span12">
+                    <!-- Your existing table code -->
 
-            </table>
-          </div>
+                    <?php
+                    include "dbcon.php";
+                    $qry = "select * from members";
+                    $cnt = 1;
+
+                    if (isset($_POST['recordCount']) && is_numeric($_POST['recordCount'])) {
+                        $qry .= " LIMIT " . $_POST['recordCount'];
+                    }else {
+                      $qry .= " LIMIT 10"; // Default limit to 10 records
+                  }
+
+                    $result = mysqli_query($conn, $qry);
+
+                    echo "<table class='table table-bordered table-hover'>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fullname</th>
+                                    <th>Username</th>
+                                    <th>Gender</th>
+                                    <th>Contact Number</th>
+                                    <th>D.O.R</th>
+                                    <th>Address</th>
+                                    <th>Amount</th>
+                                    <th>Choosen Service</th>
+                                    <th>Plan</th>
+                                </tr>
+                            </thead>";
+
+                    while ($row = mysqli_fetch_array($result)) {
+
+                        echo "<tbody> 
+                            <td><div class='text-center'>" . $cnt . "</div></td>
+                            <td><div class='text-center'>" . $row['fullname'] . "</div></td>
+                            <td><div class='text-center'>@" . $row['username'] . "</div></td>
+                            <td><div class='text-center'>" . $row['gender'] . "</div></td>
+                            <td><div class='text-center'>" . $row['contact'] . "</div></td>
+                            <td><div class='text-center'>" . $row['dor'] . "</div></td>
+                            <td><div class='text-center'>" . $row['address'] . "</div></td>
+                            <td><div class='text-center'>₱" . $row['amount'] . "</div></td>
+                            <td><div class='text-center'>" . $row['services'] . "</div></td>
+                            <td><div class='text-center'>" . $row['plan'] . " Day/s</div></td>
+                        </tbody>";
+                        $cnt++;
+                    }
+                    ?>
+
+                    </table>
+                </div>
+            </div>
         </div>
-   
-		
-	
-      </div>
     </div>
-  </div>
-</div>
 
 <!--end-main-container-part-->
 
@@ -140,6 +144,18 @@ header('location:../index.php');
 <script src="../js/matrix.popover.js"></script> 
 <script src="../js/jquery.dataTables.min.js"></script> 
 <script src="../js/matrix.tables.js"></script> 
+<script>
+$(document).ready( function () {
+    $('#member-table').DataTable({
+        "paging": true,
+        "lengthChange": true,
+        "searching": true,
+        "ordering": true,
+        "info": true,
+        "autoWidth": true,
+    });
+} );
+</script>
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to

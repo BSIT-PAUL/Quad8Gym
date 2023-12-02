@@ -1,9 +1,14 @@
 <?php
 session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
+//the isset function to check username is already logged in and stored on the session
+if (!isset($_SESSION['user_id'])) {
+    header('location:../index.php');
 }
+
+include "dbcon.php";
+
+
+
 ?>
  
 <!DOCTYPE html>
@@ -21,6 +26,9 @@ header('location:../index.php');
 <link href="../font-awesome/css/all.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+  
 </head>
 <body>
  
@@ -53,57 +61,58 @@ header('location:../index.php');
   </div>
   <div class="container-fluid">
     <hr>
+    <form method="post">
+        <label for="recordCount">Number of Records to Display:</label>
+        <input type="number" name="recordCount" id="recordCount" min="1" max="100" value="<?php echo $recordCount; ?>" />
+        <input class="btn btn-primary"  type="submit" value="Apply" />
+    </form>
+
+
     <div class="row-fluid">
-      <div class="span12">
+        <div class="span12">
+            <div class='widget-box'>
+                <div class='widget-title'> <span class='icon'> <i class='fas fa-cogs'></i> </span>
+                    <h5>Product table</h5>
+                </div>
+                <div class='widget-content nopadding'>
+                    <table id='product-table' class='table table-bordered table-hover'>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Product Name</th>
+                                <th>Flavor</th>
+                                <th>Brand</th>
+                                <th>Price</th>
+                                <th>Quantity Available</th>
+                            </tr>
+                        </thead>
 
-      <div class='widget-box'>
-          <div class='widget-title'> <span class='icon'> <i class='fas fa-cogs'></i> </span>
-            <h5>Product table</h5>
-          </div>
-          <div class='widget-content nopadding'>
-	  
-	  <?php
+                        <?php
+                        // Set default record count
+$recordCount = isset($_POST['recordCount']) && is_numeric($_POST['recordCount']) ? intval($_POST['recordCount']) : 10;
 
-      include "dbcon.php";
-      $qry="select * from products";
-      $cnt = 1;
-        $result=mysqli_query($conn,$qry);
+// Validate and sanitize user input to prevent SQL injection
+$recordCount = max(1, min(100, $recordCount)); // Limit record count between 1 and 100
 
-        
-          echo"<table class='table table-bordered table-hover'>
-              <thead>
-                <tr>
-                <th>#</th>
-                  <th>Product Name</th>
-                  <th>Flavor</th>
-                  <th>Brand</th>
-                  <th>Price</th>
-                  <th>Quantity Available</th>
-                </tr>
-              </thead>";
-              
-            while($row=mysqli_fetch_array($result)){
-            
-            echo"<tbody> 
-            <td><div class='text-center'>".$cnt."</div></td>
-                <td><div class='text-center'>".$row['item_name']."</div></td>
-                <td><div class='text-center'>".$row['flavor']."</div></td>
-                <td><div class='text-center'>".$row['brand']."</div></td>
-                <td><div class='text-center'>₱".$row['price']."</div></td>
-                <td><div class='text-center'>".$row['quantity_available']."</div></td>
-             
-                
-              </tbody>";
-              $cnt++;}
-            ?>
-
-            </table>
-          </div>
+$qry = "SELECT * FROM products LIMIT $recordCount";
+$result = mysqli_query($conn, $qry);
+                        $cnt = 1;
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<tbody>
+                                <td><div class='text-center'>$cnt</div></td>
+                                <td><div class='text-center'>{$row['item_name']}</div></td>
+                                <td><div class='text-center'>{$row['flavor']}</div></td>
+                                <td><div class='text-center'>{$row['brand']}</div></td>
+                                <td><div class='text-center'>₱{$row['price']}</div></td>
+                                <td><div class='text-center'>{$row['quantity_available']}</div></td>
+                            </tbody>";
+                            $cnt++;
+                        }
+                        ?>
+                    </table>
+                </div>
+            </div>
         </div>
-   
-		
-	
-      </div>
     </div>
   </div>
 </div>
@@ -133,7 +142,18 @@ header('location:../index.php');
 <script src="../js/matrix.popover.js"></script> 
 <script src="../js/jquery.dataTables.min.js"></script> 
 <script src="../js/matrix.tables.js"></script> 
-
+<script>
+        $(document).ready(function () {
+            $('#product-table').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+            });
+        });
+    </script>
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
   // a different page. Ignore if the value returned is a null string:

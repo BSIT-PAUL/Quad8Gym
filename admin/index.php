@@ -28,6 +28,7 @@ $result5=mysqli_query($con,$qry);
 <link href="../font-awesome/css/all.css" rel="stylesheet" />
 <script src="https://kit.fontawesome.com/d714e2950d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="../css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
 

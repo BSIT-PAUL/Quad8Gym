@@ -20,6 +20,8 @@ header('location:../index.php');
 <link href="../font-awesome/css/fontawesome.css" rel="stylesheet" />
 <link href="../font-awesome/css/all.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/jquery.gritter.css" />
+<link rel="stylesheet" type="text/css" href="path/to/sweetalert2.min.css">
+<script src="path/to/sweetalert2.all.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -27,7 +29,7 @@ header('location:../index.php');
 <!--Header-part--> 
 <div id="header">
 <img src="logoo.png" alt="Logo" height="70px" width="170px"/>
-  <h1><a href="dashboard.html">Quad 8 Gym</a></h1>
+  <h1><a href="dashboard.php">Quad 8 Gym</a></h1>
 </div>
 <!--close-Header-part--> 
 
@@ -45,6 +47,54 @@ header('location:../index.php');
 <!--sidebar-menu-->
 <?php $page='members-entry'; include 'includes/sidebar.php'?>
 <!--sidebar-menu-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[id^=confirmAddLink]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            var id = link.getAttribute('data-id');
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'add-member-entry.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText); // Parse the response
+                    if (response.status === 'success') {
+                        // Use SweetAlert to show success message and trigger the modal
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Member Added Successfully',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(() => {
+                            $('#successModal').modal('show'); // Trigger the modal
+                        });
+                    } else {
+                        // Use SweetAlert to show error message
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Error adding member: ' + response.message
+                        });
+                    }
+                } else {
+                    // Use SweetAlert to show general error message
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Request failed. Please try again later.'
+                    });
+                }
+            };
+
+            xhr.send(); // You may need to send some data with the request, depending on your server-side logic
+        });
+    });
+});
+
+</script>
+
 <div id="content">
 <div id="content-header">
   <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="tip-bottom">Manamge Members</a> <a href="#" class="current">Add Members</a> </div>
@@ -59,7 +109,7 @@ header('location:../index.php');
           <h5>Personal-info</h5>
         </div>
         <div class="widget-content nopadding">
-          <form action="add-member-req.php" method="POST" class="form-horizontal">
+        <form action="add-member-req.php" method="POST" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">Full Name :</label>
               <div class="controls">
@@ -195,12 +245,30 @@ header('location:../index.php');
             </div>
             
           
-            
-            <div class="form-actions text-center">
-              <button type="submit" class="btn btn-success">Submit Member Details</button>
-            </div>
+   <!-- ... -->
+<div class="form-actions text-center">
+    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#successModal">Submit Member Details</button>
+</div>
+
             </form>
 
+<!-- Bootstrap Modal -->
+<div class='modal fade' id='successModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <h5 class='modal-title' id='exampleModalLabel'>Confirmation</h5>
+
+            </div>
+            <div class='modal-body'>
+                Member added successfully.
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+            </div>
+        </div>
+    </div>
+</div>
           </div>
 
 
@@ -220,7 +288,8 @@ header('location:../index.php');
 <!--end-main-container-part-->
 
   
-
+<script src="path/to/sweetalert2.all.min.js"></script>
+ 
 <script src="../js/excanvas.min.js"></script> 
 <script src="../js/jquery.min.js"></script> 
 <script src="../js/jquery.ui.custom.js"></script> 

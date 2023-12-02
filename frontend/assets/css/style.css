@@ -89,7 +89,7 @@
 /* line 50, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_variables.scss */
 .boxed-btn {
   background: #fff;
-  color: #FF0000 !important;
+  color: #2200ff !important;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Oswald", sans-serif;
@@ -490,7 +490,7 @@ hr {
 /* line 235, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
 .owl-carousel:hover .owl-nav div:hover {
   color: #fff;
-  background: #ff3500;
+  background: #1900ff;
 }
 
 /* line 244, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_common.scss */
@@ -528,7 +528,7 @@ hr {
   top: 0;
   width: 101%;
   height: 101%;
-  background: #c20505;
+  background: #0508c2;
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -5237,7 +5237,7 @@ hr {
 
 /* line 577, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_blog_page.scss */
 .categories_post:hover .categories_details {
-  background: rgba(222, 99, 32, 0.85);
+  background: rgba(35, 32, 222, 0.85);
 }
 
 /*============ blog_left_sidebar css ==============*/

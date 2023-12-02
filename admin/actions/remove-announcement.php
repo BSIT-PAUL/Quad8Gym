@@ -16,7 +16,6 @@ $qry="delete from announcements where id=$id";
 $result=mysqli_query($con,$qry);
 
 if($result){
-    echo"DELETED";
     header('Location:../announcement.php');
 }else{
     echo"ERROR!!";

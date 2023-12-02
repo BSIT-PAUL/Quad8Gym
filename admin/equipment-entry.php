@@ -141,7 +141,7 @@ header('location:../index.php');
               <label for="normal" class="control-label">Contact Number</label>
               <div class="controls">
                 <input type="text" id="mask-phone" name="contact" minlength="10" maxlength="10" class="span8 mask text" required>
-                <span class="help-block blue span8">9999999999</span> 
+                <span class="help-block blue span8">9990123456</span> 
                 </div>
             </div>
 
